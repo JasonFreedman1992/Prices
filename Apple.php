@@ -248,6 +248,8 @@ function appleSubMenu(){
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             // console.log(iphoneinputs);
             iphoneinputs.disabled = switchapple.checked ? false : true;
+            console.log("clicking da box");
+            console.log(iphoneinputs);
         }
     </script>
 
