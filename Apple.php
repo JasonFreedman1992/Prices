@@ -215,6 +215,7 @@ function appleSubMenu(){
 
         td.submenu-price-field{
             font-weight: bold;
+            color: black;
         }
     </style>
 
@@ -247,93 +248,93 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11proscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11proscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11prolcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexslcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11prolcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexslcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11probatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11probatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11prochargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexschargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11prochargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexschargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11proheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11proheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11profrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11profrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11prorearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11prorearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11prorearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11prorearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11prohomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexshomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11prohomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexshomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphoneXpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11propowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphone11promaxpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexspowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11propowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexspowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -358,73 +359,73 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro97powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro105powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro97powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro105powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -449,17 +450,17 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series5_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series4_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series4_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series5_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series5_44mscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" placeholder="<?php echo $series5_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>
