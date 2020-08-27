@@ -48,6 +48,8 @@ function pricesMenu(){
 }
 
 add_action("admin_menu", "addMenu");
+
+// apple shortcodes
 add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
 add_shortcode('iphone11batteryreplacement', 'iphone11batteryreplacement');
 add_shortcode('iphone11lcdtouch', 'iphone11lcdtouch');

@@ -12,11 +12,13 @@ Version: 1
 */
 
 function appleSubMenu(){
-    // global sql import
-    // new 22
+
+    // global sql import, php is dumb.
     global $wpdb;
 
-    //iphone variables first
+    //
+    // iphone variables first
+    //
     $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
 
     $iphone11screenrepair = $price[0]->screenrepair;
@@ -96,7 +98,9 @@ function appleSubMenu(){
     $iphonexsmaxpowerbutton = $price5[0]->powerbutton;
     $iphonexsmaxhomebutton = $price5[0]->homebutton;
 
-    //ipad variables
+    //
+    // ipad variables
+    //
     $price6 = $wpdb->get_results("SELECT * FROM `appleipad` WHERE `model`='pro97'");
     $ipadpro97screenrepair = $price6[0]->screenrepair;
     $ipadpro97batteryreplacement = $price6[0]->batteryreplacement;
