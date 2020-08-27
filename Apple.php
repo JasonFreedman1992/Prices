@@ -254,8 +254,10 @@ function appleSubMenu(){
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
-                    <th>            <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
-            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/></th>
+                    <th>            
+                        <label style="margin-bottom: 4px;display: inline-block;">Unlock</label>
+                        <input id="switch" type="checkbox"/>
+                    </th>
                     <th>iPhone X</th>
                     <th>iPhone 11</th>
                     <th>iPhone 11 Pro</th>
