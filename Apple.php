@@ -261,6 +261,20 @@ function appleSubMenu(){
                 //     e.currentTarget.style.display = "none"
                 // }
             }
+
+            var buttons = document.getElementsByClassName("pure-button");
+            for(var i = 0; i < buttons.length; i++) {
+                if(buttons[i].style.display === "none"){
+                    buttons[i].style.display = "inline-block";
+                }
+                else{
+                    buttons[i].style.display = "none";
+                }
+                
+                // iphoneinputs[i] = (e) => {
+                //     e.currentTarget.style.display = "none"
+                // }
+            }
             // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             // // console.log(iphoneinputs);
             // iphoneinputs.disabled = switchapple.checked ? false : true;
