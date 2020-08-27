@@ -17,7 +17,7 @@ function appleSubMenu(){
     global $wpdb;
 
     //iphone variables first
-    $price = $wpdb->get_results("SELECT `*` FROM `appleiphone` WHERE `model`='11'");
+    $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
 
     $random = $price[0]->screenrepair;
 
