@@ -249,7 +249,7 @@ function appleSubMenu(){
             // console.log(iphoneinputs);
             iphoneinputs.disabled = switchapple.checked ? false : true;
             console.log("clicking da box");
-            console.log(iphoneinputs);
+            console.log(iphoneinputs.length);
         }
     </script>
 
