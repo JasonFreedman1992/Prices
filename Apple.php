@@ -249,7 +249,7 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-            <button style="margin-bottom: 7.4px;padding-left: 20px; " class="pure-button pure-button-primary">Save</button>
+            <button style="margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
@@ -370,7 +370,7 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPad
             </h1>
-            <button style="padding-left: 20px; margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
+            <button style="margin-left: 20px; margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
@@ -466,7 +466,7 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iWatch
             </h1>
-            <button style="margin-bottom: 7.4px;padding-left: 20px; " class="pure-button pure-button-primary">Save</button>
+            <button style="margin-bottom: 7.4px;margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
