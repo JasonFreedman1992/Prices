@@ -10,6 +10,9 @@ Author URI:
 Version: 1
 
 */
+
+global $wpdb;
+
 include_once(__DIR__.'/Apple.php');
 include_once(__DIR__.'/Google.php');
 include_once(__DIR__.'/LG.php');
@@ -41,10 +44,7 @@ function pricesMenu(){
 
 function iphone11screenrepair(){
 
-    // sql calls to get prices
-
     $finalString = "$";
-    global $wpdb;
 
     $price = $wpdb->get_results("SELECT `screenrepair` FROM `appleiphone` WHERE `model`='11'");
     
@@ -54,6 +54,7 @@ function iphone11screenrepair(){
 
 add_action("admin_menu", "addMenu");
 add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
+
 
 
 ?>
