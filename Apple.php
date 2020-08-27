@@ -249,7 +249,7 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-            <button/>
+            <button class="pure-button pure-button-primary"/>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
