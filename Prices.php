@@ -18,6 +18,8 @@ include_once(__DIR__.'/Motorola.php');
 include_once(__DIR__.'/OnePlus.php');
 include_once(__DIR__.'/Samsung.php');
 
+include_once(__DIR__.'/AppleShortCodes.php');
+
 function addMenu(){
     //
     add_menu_page("Prices", "Prices", "edit_pages", "prices", "pricesMenu");
@@ -41,13 +43,9 @@ function pricesMenu(){
 }
 
 function iphone11screenrepair(){
-
     global $wpdb;
-
     $finalString = "$";
-
     $price = $wpdb->get_results("SELECT `screenrepair` FROM `appleiphone` WHERE `model`='11'");
-    
     $finalString .= $price[0]->screenrepair;
     return $finalString;
 }
