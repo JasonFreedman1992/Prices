@@ -255,7 +255,7 @@ function appleSubMenu(){
             <thead>
                 <tr>
                     <th>            
-                        <label style="margin-bottom: 4px;display: inline-block;">Unlock</label>
+                        <label style="padding-bottom: 4px;display: inline-block;">Unlock</label>
                         <input id="switch" type="checkbox"/>
                     </th>
                     <th>iPhone X</th>
