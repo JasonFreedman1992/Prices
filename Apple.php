@@ -244,11 +244,11 @@ function appleSubMenu(){
         //     document.getElementById('yourText').disabled = !this.checked;
         // };
 
-        // var appleinputs = document.getElementsByClassName("appleinputs");
-        // txtPassportNumber.disabled = chkPassport.checked ? false : true;
-        // if (!txtPassportNumber.disabled) {
-        //     txtPassportNumber.focus();
-        // }
+        var appleinputs = document.getElementsByClassName("appleinputs");
+        txtPassportNumber.disabled = chkPassport.checked ? false : true;
+        if (!txtPassportNumber.disabled) {
+            txtPassportNumber.focus();
+        }
 
     </script>
 
@@ -257,7 +257,6 @@ function appleSubMenu(){
         <!-- iPhone 1 -->
         <!-- iPhone 2 -->
         <!-- iPhone 3 -->
-            <form>
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
@@ -375,7 +374,6 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
-        </form>
 
         <!-- iPad 1 -->
         <!-- iPad 2 -->
