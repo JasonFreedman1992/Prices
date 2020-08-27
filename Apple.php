@@ -252,7 +252,7 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphoneXscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input" disabled type="text" value="<?php echo $iphoneXscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11screenrepair ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11proscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input" type="text" value="<?php echo $iphone11promaxscreenrepair ?>" /></td>
