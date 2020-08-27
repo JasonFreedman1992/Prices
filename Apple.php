@@ -282,7 +282,7 @@ function appleSubMenu(){
                 <tr>
                     <th>            
                         <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input onclick="EnableDisableTextBox(this)" id="switchapple" type="checkbox" onmousedown="this.form.iphoneinputs.disabled=this.checked"/>
+                        <input onclick="EnableDisableTextBox(this)" id="switchapple" type="checkbox"/>
                     </th>
                     <th>iPhone X</th>
                     <th>iPhone 11</th>
