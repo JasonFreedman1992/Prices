@@ -13,7 +13,7 @@ Version: 1
 
 function appleSubMenu(){
     // global sql import
-    // new
+    // new 22
     global $wpdb;
 
     //iphone variables first
