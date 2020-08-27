@@ -204,7 +204,7 @@ function appleSubMenu(){
         .submenu-heading{
             width:480px;
             text-align: center;
-            display: inline;
+            display: inline-block;
         }
 
         /* h1.submenu-heading1{
