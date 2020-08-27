@@ -72,7 +72,7 @@ function appleSubMenu(){
 
     $price4 = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='xs'");
     $iphonexsscreenrepair = $price4[0]->screenrepair;
-    $iphonexsbatteryreplacemen = $price4[0]->batteryreplacement;
+    $iphonexsbatteryreplacement = $price4[0]->batteryreplacement;
     $iphonexslcdtouch = $price4[0]->lcdtouch;
     $iphonexschargingport = $price4[0]->chargingport;
     $iphonexsheadphonejack = $price4[0]->headphonejack;
