@@ -244,8 +244,8 @@ function appleSubMenu(){
 
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
         <div class="submenu-heading">
-
-            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox">Unlock</input>
+            <label style="margin-bottom: 7.4px;">Unlock</label>
+            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/>
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
