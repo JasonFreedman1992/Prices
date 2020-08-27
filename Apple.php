@@ -193,14 +193,24 @@ function appleSubMenu(){
 
     <style>
 
+        input#switch{
+            float: left;
+        }
+
         .submenu-wrapper{
             padding-top: 20px;
         }
 
-        h1.submenu-heading1{
+        .submenu-heading{
+            width:480px;
+            text-align: center;
+            display: inline;
+        }
+
+        /* h1.submenu-heading1{
             text-align: center;
             width: 480px;
-        }
+        } */
 
         table.submenu-table{
             border: 2px solid grey !important;
@@ -234,9 +244,14 @@ function appleSubMenu(){
         <!-- iPhone 3 -->
 
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-        <h1 class="submenu-heading1">
-            iPhone
-        </h1>
+        <div class="submenu-heading">
+
+            <input id="switch" type="checkbox" id="default-remember" />Remember me</label>
+            <h1 class="submenu-heading1">
+                iPhone
+            </h1>
+
+        </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
