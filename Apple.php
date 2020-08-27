@@ -244,12 +244,10 @@ function appleSubMenu(){
         //     document.getElementById('yourText').disabled = !this.checked;
         // };
 
-        var appleinputs = document.getElementsByClassName("appleinputs");
-        txtPassportNumber.disabled = chkPassport.checked ? false : true;
-        if (!txtPassportNumber.disabled) {
-            txtPassportNumber.focus();
+        function EnableDisableTextBox(switchapple) {
+            var iphoneinputs = document.getElementsByClassName("iphoneinputs");
+            iphoneinputs.disabled = switchapple.checked ? false : true;
         }
-
     </script>
 
     <div class="submenu-wrapper">
