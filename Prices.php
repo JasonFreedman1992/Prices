@@ -42,14 +42,6 @@ function pricesMenu(){
     echo $moneysign;
 }
 
-function iphone11screenrepair(){
-    global $wpdb;
-    $finalString = "$";
-    $price = $wpdb->get_results("SELECT `screenrepair` FROM `appleiphone` WHERE `model`='11'");
-    $finalString .= $price[0]->screenrepair;
-    return $finalString;
-}
-
 add_action("admin_menu", "addMenu");
 add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
 
