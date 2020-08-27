@@ -194,7 +194,7 @@ function appleSubMenu(){
     <style>
 
         input#switch{
-            float: left;
+            /* float: left; */
         }
 
         .submenu-wrapper{
