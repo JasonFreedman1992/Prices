@@ -249,13 +249,13 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-            <button style="margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
+            <button style="margin-bottom: 7.4px;padding-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
                     <th>            
-                        <label style="padding-bottom: 4px;display: inline-block;">Unlock</label>
+                        <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
                         <input id="switch" type="checkbox"/>
                     </th>
                     <th>iPhone X</th>
@@ -364,9 +364,14 @@ function appleSubMenu(){
         <!-- iPad 2 -->
         <!-- iPad 3 -->
 
-        <h1 class="submenu-heading1">
-            iPad
-        </h1>
+        <div class="submenu-heading">
+            <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
+            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
+            <h1 class="submenu-heading1">
+                iPad
+            </h1>
+            <button style="padding-left: 20px; margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
+        </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
@@ -455,9 +460,14 @@ function appleSubMenu(){
         <!-- iWatch 2 -->
         <!-- iWatch 3 -->
 
-        <h1 class="submenu-heading1">
-            iWatch
-        </h1>
+        <div class="submenu-heading">
+            <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
+            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
+            <h1 class="submenu-heading1">
+                iWatch
+            </h1>
+            <button style="margin-bottom: 7.4px;padding-left: 20px; " class="pure-button pure-button-primary">Save</button>
+        </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
