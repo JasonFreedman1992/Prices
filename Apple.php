@@ -23,7 +23,7 @@ function appleSubMenu(){
 
     $iphone11screenrepair = '0';
 
-    $iphone11batteryreplacement = $price[0]->screenrepair;
+    $iphone11batteryreplacement = $price[0]->lcdtouch;
     $iphone11lcdtouch = '0';
     $iphone11chargingport = '0';
     $iphone11headphonejack = '0';
