@@ -246,8 +246,8 @@ function appleSubMenu(){
 
         function EnableDisableTextBox(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
-            console.log(iphoneinputs);
-            // iphoneinputs.disabled = switchapple.checked ? false : true;
+            // console.log(iphoneinputs);
+            iphoneinputs.disabled = switchapple.checked ? false : true;
         }
     </script>
 
@@ -270,7 +270,7 @@ function appleSubMenu(){
                 <tr>
                     <th>            
                         <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input id="switchapple" type="checkbox" onmousedown="this.form.iphoneinputs.disabled=this.checked"/>
+                        <input onclick="EnableDisableTextBox(this)" id="switchapple" type="checkbox" onmousedown="this.form.iphoneinputs.disabled=this.checked"/>
                     </th>
                     <th>iPhone X</th>
                     <th>iPhone 11</th>
