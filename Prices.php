@@ -19,6 +19,11 @@ include_once(__DIR__.'/OnePlus.php');
 include_once(__DIR__.'/Samsung.php');
 
 include_once(__DIR__.'/AppleShortCodes.php');
+include_once(__DIR__.'/GoogleShortCodes.php');
+include_once(__DIR__.'/LGShortCodes.php');
+include_once(__DIR__.'/MotorolaShortCodes.php');
+include_once(__DIR__.'/OnePlusShortCodes.php');
+include_once(__DIR__.'/SamsungShortCodes.php');
 
 function addMenu(){
     //
@@ -44,7 +49,6 @@ function pricesMenu(){
 
 add_action("admin_menu", "addMenu");
 add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
-
 
 
 ?>
