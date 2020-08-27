@@ -195,6 +195,7 @@ function appleSubMenu(){
 
         input#switch{
             /* float: left; */
+            display: inline-block;
         }
 
         .submenu-wrapper{
@@ -204,13 +205,12 @@ function appleSubMenu(){
         .submenu-heading{
             width:480px;
             text-align: center;
-            display: inline-block;
+            text-align: center;
         }
 
-        /* h1.submenu-heading1{
-            text-align: center;
-            width: 480px;
-        } */
+        h1.submenu-heading1{
+            display: inline-block;
+        }
 
         table.submenu-table{
             border: 2px solid grey !important;
