@@ -49,6 +49,16 @@ function pricesMenu(){
 
 add_action("admin_menu", "addMenu");
 add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
+add_shortcode('iphone11batteryreplacement', 'iphone11batteryreplacement');
+add_shortcode('iphone11lcdtouch', 'iphone11lcdtouch');
+add_shortcode('iphone11chargingport', 'iphone11chargingport');
+add_shortcode('iphone11headphonejack', 'iphone11headphonejack');
+add_shortcode('iphone11frontcamera', 'iphone11frontcamera');
+add_shortcode('iphone11rearcamera', 'iphone11rearcamera');
+add_shortcode('iphone11rearcameralens', 'iphone11rearcameralens');
+add_shortcode('iphone11rearbackglass', 'iphone11rearbackglass');
+add_shortcode('iphone11powerbutton', 'iphone11powerbutton');
+add_shortcode('iphone11homebutton', 'iphone11homebutton');
 
 
 ?>
