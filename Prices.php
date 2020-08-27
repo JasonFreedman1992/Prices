@@ -11,8 +11,6 @@ Version: 1
 
 */
 
-global $wpdb;
-
 include_once(__DIR__.'/Apple.php');
 include_once(__DIR__.'/Google.php');
 include_once(__DIR__.'/LG.php');
@@ -43,6 +41,8 @@ function pricesMenu(){
 }
 
 function iphone11screenrepair(){
+
+    global $wpdb;
 
     $finalString = "$";
 
