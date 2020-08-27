@@ -375,7 +375,10 @@ function appleSubMenu(){
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>            
+                        <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
+                        <input id="switch" type="checkbox"/>
+                    </th>
                     <th>iPad Pro 9.7</th>
                     <th>iPad Pro 10.5</th>
                     <th>iPad Pro 12.9 4gen</th>
@@ -471,7 +474,10 @@ function appleSubMenu(){
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>            
+                        <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
+                        <input id="switch" type="checkbox"/>
+                    </th>
                     <th>Series 4 40mm</th>
                     <th>Series 4 44mm</th>
                     <th>Series 5 40mm</th>
