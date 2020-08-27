@@ -39,7 +39,7 @@ function pricesMenu(){
     echo $moneysign;
 }
 
-function appleIphone11Repair(){
+function iphone11screenrepair(){
 
     // sql calls to get prices
 
@@ -53,7 +53,7 @@ function appleIphone11Repair(){
 }
 
 add_action("admin_menu", "addMenu");
-add_shortcode('iphone11', 'appleIphone11Repair');
+add_shortcode('iphone11screenrepair', 'iphone11screenrepair');
 
 
 ?>
