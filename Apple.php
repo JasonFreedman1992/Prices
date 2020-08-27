@@ -244,12 +244,22 @@ function appleSubMenu(){
         //     document.getElementById('yourText').disabled = !this.checked;
         // };
 
+
+        // iphoneinputs.forEach(disable)
+
         function EnableDisableTextBox(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
-            // console.log(iphoneinputs);
-            iphoneinputs.disabled = switchapple.checked ? false : true;
-            console.log("clicking da box");
-            console.log(iphoneinputs.length);
+            for(var i = 0; i < iphoneinputs.length; i++) {
+                iphoneinputs[i].disabled = true;
+                // iphoneinputs[i] = (e) => {
+                //     e.currentTarget.style.display = "none"
+                // }
+            }
+            // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
+            // // console.log(iphoneinputs);
+            // iphoneinputs.disabled = switchapple.checked ? false : true;
+            // console.log("clicking da box");
+            // console.log(iphoneinputs.length);
         }
     </script>
 
