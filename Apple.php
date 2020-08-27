@@ -17,10 +17,13 @@ function appleSubMenu(){
     global $wpdb;
 
     //iphone variables first
-    $price = $wpdb->get_results("SELECT `screenrepair` FROM `appleiphone` WHERE `model`='11'");
-    $iphone11screenrepair = $price[0]->screenrepair;
+    $price = $wpdb->get_results("SELECT `*` FROM `appleiphone` WHERE `model`='11'");
 
-    $iphone11batteryreplacement = '0';
+    $random = $price[0]->screenrepair;
+
+    $iphone11screenrepair = '0';
+
+    $iphone11batteryreplacement = $price[0]->screenrepair;
     $iphone11lcdtouch = '0';
     $iphone11chargingport = '0';
     $iphone11headphonejack = '0';
