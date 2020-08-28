@@ -337,10 +337,12 @@ function appleSubMenu(){
                 ?> 
     
    
-    <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
+    <!-- <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
             
         </div>
+        <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <!-- <form method="post"> 
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
