@@ -13,8 +13,8 @@
             echo '<script>';
             echo 'var input = document.getElementById('. json_encode("iphone11screenrepair") .');';
             echo 'input.style.border = '.json_encode("border:1px solid red").';';
-            echo '</script>';
             echo 'console.log('. json_encode( "something is happening" ) .')';
+            echo '</script>';
             $iphone11screenrepair = $_POST['iphone11screenrepair'];
             $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepair WHERE `model`='11'");
         }
