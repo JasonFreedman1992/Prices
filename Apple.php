@@ -311,11 +311,16 @@ function appleSubMenu(){
 
 
                 <?php
+                    // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
+                    // $wpdb->query($sql);
+                    global $wpdb;
                     if(isset($_POST['iphone-save'])) { 
                         echo "This is iPhone-button1";
                         echo '<script>';
                         echo 'console.log('. json_encode( "SUP1" ) .')';
                         echo '</script>';
+                        $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
+                        $wpdb->query($sql);
                     } 
                 ?> 
     
