@@ -327,7 +327,7 @@ function appleSubMenu(){
                         $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                         $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='250' WHERE `model`='11'");
 
-                    // } 
+                    } 
                 ?> 
     
    
