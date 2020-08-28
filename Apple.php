@@ -205,6 +205,7 @@ function appleSubMenu(){
 
         .submenu-wrapper{
             /* padding-top: 20px; */
+            display: inline-block;
         }
 
         .submenu-wrapper2{
