@@ -330,7 +330,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Glass</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXscreenrepair ?>" disabled /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11screenrepair ?>" disabled /></td>
+                    <td name="iphone11screenrepair" class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11screenrepair ?>" disabled /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11proscreenrepair ?>" disabled /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxscreenrepair ?>" disabled /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsscreenrepair ?>" disabled /></td>
@@ -566,6 +566,21 @@ function appleSubMenu(){
     <!-- more HTML code here -->
     <?php   // back to PHP
 
+
+}
+// $price2 = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11pro'");
+function iphone_insert_data(){
+
+    global $wpdb;
+    $table_name= $wpdb->prefix.`appleiphone`;
+
+    $cost=$_POST['iphone11screenrepair'];
+
+    if(isset($_POST['iphone-save'])){
+        $sql = $wpdb->prepare("UPDATE $tablename SET `screenrepair`=$cost WHERE model='11' ") ;
+
+        $wpdb->query($sql);
+    }
 
 }
 
