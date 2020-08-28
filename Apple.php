@@ -374,9 +374,6 @@ function appleSubMenu(){
                     <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" readonly /></td>
                     <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsscreenrepair ?>" readonly /></td>
                     <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength="4" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
