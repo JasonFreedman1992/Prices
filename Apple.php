@@ -195,10 +195,12 @@ function appleSubMenu(){
 
         input#switch{
             display: inline-block;
+            
         }
 
         input#switchapple{
             display: inline-block;
+            border:1px solid red;
         }
 
         .submenu-wrapper{
@@ -440,73 +442,73 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro97powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro105powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -539,17 +541,17 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series5_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_44mscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input" type="text" disabled value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>
