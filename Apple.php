@@ -204,12 +204,18 @@ function appleSubMenu(){
         }
 
         .submenu-wrapper{
-            padding-top: 20px;
+            /* padding-top: 20px; */
+        }
+
+        .submenu-wrapper2{
+            /* padding-top: 20px; */
+            display: inline-block;
         }
 
         .submenu-heading{
             width:480px;
             text-align: center;
+            display: inline-block;
         }
 
         h1.submenu-heading1{
@@ -298,6 +304,9 @@ function appleSubMenu(){
         }
     </script>
 
+    <div class="submenu-wrapper">
+    
+
         <!-- iPhone 1 -->
         <!-- iPhone 2 -->
         <!-- iPhone 3 -->
@@ -340,6 +349,7 @@ function appleSubMenu(){
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
             
         </div>
+        <div class="submenu-wrapper2">
         <form method="post"> 
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <!-- <form method="post"> 
@@ -595,6 +605,8 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
+        </div>
+    </div>
     <!-- more HTML code here -->
     <?php   // back to PHP
 
