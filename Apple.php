@@ -200,7 +200,7 @@ function appleSubMenu(){
 
         input#switchapple{
             display: inline-block;
-            border:1px solid red;
+            
         }
 
         .submenu-wrapper{
@@ -230,6 +230,7 @@ function appleSubMenu(){
 
         input.submenu-table-input{
             width: 60px;
+            border:1px solid red;
         }
 
         td.submenu-price-field{
