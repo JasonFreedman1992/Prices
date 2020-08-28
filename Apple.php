@@ -324,8 +324,8 @@ function appleSubMenu(){
                     // $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
                     // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
                     // $wpdb->query($sql);
-                                            // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
-                        // $wpdb->query($sql);
+                    // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
+                    // $wpdb->query($sql);
                     
                     if(isset($_POST['iphone11screenrepair'])){
                         $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
@@ -333,12 +333,19 @@ function appleSubMenu(){
                     // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                     // global $wpdb;
                     if(isset($_POST['iphone-save'])) { 
-                        $iphone11screenrepair = $_POST['iphone11screenrepair'];
-                        // echo "This is iPhone-button1";
-                        echo '<script>';
-                        echo 'console.log('. json_encode( $iphone11screenrepairprice ) .')';
-                        echo '</script>';
+
+                        if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
+                            echo '<script>';
+                            echo 'console.log('. json_encode( "NOT THE SAME" ) .')';
+                            echo '</script>';
+                        }
+                        else{
+                            echo '<script>';
+                            echo 'console.log('. json_encode( "THE SAME" ) .')';
+                            echo '</script>';
+                        }
                         
+                        $iphone11screenrepair = $_POST['iphone11screenrepair']
                         $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
 
                     } 
