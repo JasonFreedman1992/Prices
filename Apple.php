@@ -316,8 +316,10 @@ function appleSubMenu(){
                                             // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
                         // $wpdb->query($sql);
                     
-                    
-                    $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
+                    if(isset($_POST['iphone11screenrepair']){
+                        $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
+                    })
+                    // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                     // global $wpdb;
                     if(isset($_POST['iphone-save'])) { 
                         // echo "This is iPhone-button1";
