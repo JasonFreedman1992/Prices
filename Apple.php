@@ -314,17 +314,21 @@ function appleSubMenu(){
                     // $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
                     // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
                     // $wpdb->query($sql);
-                    global $wpdb;
-                    if(isset($_POST['iphone-save'])) { 
-                        // echo "This is iPhone-button1";
-                        // echo '<script>';
-                        // echo 'console.log('. json_encode( "SUP1" ) .')';
-                        // echo '</script>';
-                        $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
-                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='350' WHERE `model`='11'");
-                        // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
+                                            // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
                         // $wpdb->query($sql);
-                    } 
+                    
+                    
+                    
+                    // global $wpdb;
+                    // if(isset($_POST['iphone-save'])) { 
+                    //     // echo "This is iPhone-button1";
+                    //     // echo '<script>';
+                    //     // echo 'console.log('. json_encode( "SUP1" ) .')';
+                    //     // echo '</script>';
+                    //     $iphone11screenrepairprice = $_POST['iphone11screenrepair']
+                    //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='250' WHERE `model`='11'");
+
+                    // } 
                 ?> 
     
    
@@ -332,8 +336,8 @@ function appleSubMenu(){
             <input type="button" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
             </form> -->
         </div>
-        <form method="post"> 
-    <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
+          <!-- <form method="post"> 
+    <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
