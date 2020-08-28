@@ -568,7 +568,8 @@ function appleSubMenu(){
 
 }
 // $price2 = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11pro'");
-function iphone_insert_data(){
+
+// function iphone_insert_data(){
 
     // global $wpdb;
     // $table_name= $wpdb->prefix.`appleiphone`;
@@ -584,6 +585,6 @@ function iphone_insert_data(){
 
     // echo 'console.log('. json_encode( 'HelloTesting' ) .')';
 
-}
+// }
 
 ?>
