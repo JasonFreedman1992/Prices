@@ -311,6 +311,7 @@ function appleSubMenu(){
 
 
                 <?php
+                    // $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
                     // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
                     // $wpdb->query($sql);
                     global $wpdb;
@@ -319,7 +320,7 @@ function appleSubMenu(){
                         echo '<script>';
                         echo 'console.log('. json_encode( "SUP1" ) .')';
                         echo '</script>';
-                        $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
+                        $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11' ") ;
                         $wpdb->query($sql);
                     } 
                 ?> 
