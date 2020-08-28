@@ -576,11 +576,11 @@ function iphone_insert_data(){
 
     $cost=$_POST['iphone11screenrepair'];
 
-    if(isset($_POST['iphone-save'])){
-        $sql = $wpdb->prepare("UPDATE $tablename SET `screenrepair`=$cost WHERE model='11' ") ;
+    // if(isset($_POST['iphone-save'])){
+    //     $sql = $wpdb->prepare("UPDATE $tablename SET `screenrepair`=$cost WHERE model='11' ") ;
 
-        $wpdb->query($sql);
-    }
+    //     $wpdb->query($sql);
+    // }
 
 }
 
