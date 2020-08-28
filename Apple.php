@@ -335,18 +335,10 @@ function appleSubMenu(){
                     if(isset($_POST['iphone-save'])) { 
 
                         if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
-                            echo '<script>';
-                            echo 'console.log('. json_encode( "NOT THE SAME" ) .')';
-                            echo '</script>';
-                        }
-                        else{
-                            echo '<script>';
-                            echo 'console.log('. json_encode( "THE SAME" ) .')';
-                            echo '</script>';
+                            $iphone11screenrepair = $_POST['iphone11screenrepair'];
+                            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
                         }
                         
-                        $iphone11screenrepair = $_POST['iphone11screenrepair'];
-                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
 
                     } 
                 ?> 
