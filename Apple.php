@@ -262,12 +262,12 @@ function appleSubMenu(){
                 // }
             }
 
-            var buttons = document.getElementById("iphone-save");
-                if(buttons[i].style.display === "none"){
-                    buttons[i].style.display = "inline-block";
+            var button = document.getElementById("iphone-save");
+                if(button.style.display === "none"){
+                    button.style.display = "inline-block";
                 }
                 else{
-                    buttons[i].style.display = "none";
+                    button.style.display = "none";
                 }
             // for(var i = 0; i < buttons.length; i++) {
             //     if(buttons[i].style.display === "none"){
