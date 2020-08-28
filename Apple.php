@@ -254,7 +254,8 @@ function appleSubMenu(){
         function EnableDisableTextBox(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
-                if(iphoneinputs[i].disabled === true){
+                // if(iphoneinputs[i].disabled === true){
+                if(iphoneinputs[i].readOnly === true){
                     // iphoneinputs[i].disabled = false;
                     iphoneinputs[i].readOnly = false;
 
