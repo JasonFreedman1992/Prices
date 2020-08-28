@@ -120,220 +120,220 @@
         //
         // iphone 11pro
         //
-        if($iphone11proscreenrepair !== $_POST['iphone11proscreenrepair']){
-            $iphone11proscreenrepair = $_POST['iphone11proscreenrepair'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11proscreenrepair WHERE `model`='11pro'");
-        }
+        // if($iphone11proscreenrepair !== $_POST['iphone11proscreenrepair']){
+        //     $iphone11proscreenrepair = $_POST['iphone11proscreenrepair'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11proscreenrepair WHERE `model`='11pro'");
+        // }
 
-        if($iphone11prolcdtouch !== $_POST['iphone11prolcdtouch']){
-            $iphone11prolcdtouch = $_POST['iphone11prolcdtouch'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphone11prolcdtouch WHERE `model`='11pro'");
-        }
+        // if($iphone11prolcdtouch !== $_POST['iphone11prolcdtouch']){
+        //     $iphone11prolcdtouch = $_POST['iphone11prolcdtouch'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphone11prolcdtouch WHERE `model`='11pro'");
+        // }
 
-        if($iphone11probatteryreplacement !== $_POST['iphone11probatteryreplacement']){
-            $iphone11probatteryreplacement = $_POST['iphone11probatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphone11probatteryreplacement WHERE `model`='11pro'");
-        }
+        // if($iphone11probatteryreplacement !== $_POST['iphone11probatteryreplacement']){
+        //     $iphone11probatteryreplacement = $_POST['iphone11probatteryreplacement'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphone11probatteryreplacement WHERE `model`='11pro'");
+        // }
 
-        if($iphone11prochargingport !== $_POST['iphone11prochargingport']){
-            $iphone11prochargingport = $_POST['iphone11prochargingport'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphone11prochargingport WHERE `model`='11pro'");
-        }
+        // if($iphone11prochargingport !== $_POST['iphone11prochargingport']){
+        //     $iphone11prochargingport = $_POST['iphone11prochargingport'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphone11prochargingport WHERE `model`='11pro'");
+        // }
 
-        if($iphone11proheadphonejack !== $_POST['iphone11proheadphonejack']){
-            $iphone11proheadphonejack = $_POST['iphone11proheadphonejack'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphone11proheadphonejack WHERE `model`='11pro'");
-        }
+        // if($iphone11proheadphonejack !== $_POST['iphone11proheadphonejack']){
+        //     $iphone11proheadphonejack = $_POST['iphone11proheadphonejack'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphone11proheadphonejack WHERE `model`='11pro'");
+        // }
 
-        if($iphone11profrontcamera !== $_POST['iphone11profrontcamera']){
-            $iphone11profrontcamera = $_POST['iphone11profrontcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphone11profrontcamera WHERE `model`='11pro'");
-        }
+        // if($iphone11profrontcamera !== $_POST['iphone11profrontcamera']){
+        //     $iphone11profrontcamera = $_POST['iphone11profrontcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphone11profrontcamera WHERE `model`='11pro'");
+        // }
 
-        if($iphone11prorearcamera !== $_POST['iphone11prorearcamera']){
-            $iphone11prorearcamera = $_POST['iphone11prorearcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphone11prorearcamera WHERE `model`='11pro'");
-        }
+        // if($iphone11prorearcamera !== $_POST['iphone11prorearcamera']){
+        //     $iphone11prorearcamera = $_POST['iphone11prorearcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphone11prorearcamera WHERE `model`='11pro'");
+        // }
 
-        if($iphone11prorearcameralens !== $_POST['iphone11prorearcameralens']){
-            $iphone11prorearcameralens = $_POST['iphone11prorearcameralens'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphone11prorearcameralens WHERE `model`='11pro'");
-        }
+        // if($iphone11prorearcameralens !== $_POST['iphone11prorearcameralens']){
+        //     $iphone11prorearcameralens = $_POST['iphone11prorearcameralens'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphone11prorearcameralens WHERE `model`='11pro'");
+        // }
 
-        if($iphone11prohomebutton !== $_POST['iphone11prohomebutton']){
-            $iphone11prohomebutton = $_POST['iphone11prohomebutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphone11prohomebutton WHERE `model`='11pro'");
-        }
+        // if($iphone11prohomebutton !== $_POST['iphone11prohomebutton']){
+        //     $iphone11prohomebutton = $_POST['iphone11prohomebutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphone11prohomebutton WHERE `model`='11pro'");
+        // }
 
-        if($iphone11propowerbutton !== $_POST['iphone11propowerbutton']){
-            $iphone11propowerbutton = $_POST['iphone11propowerbutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphone11propowerbutton WHERE `model`='11pro'");
-        }
-
-
-
-        //
-        // iphone 11promax
-        //
-        if($iphone11promaxscreenrepair !== $_POST['iphone11promaxscreenrepair']){
-            $iphone11promaxscreenrepair = $_POST['iphone11promaxscreenrepair'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11promaxscreenrepair WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxlcdtouch !== $_POST['iphone11promaxlcdtouch']){
-            $iphone11promaxlcdtouch = $_POST['iphone11promaxlcdtouch'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphone11promaxlcdtouch WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxbatteryreplacement !== $_POST['iphone11promaxbatteryreplacement']){
-            $iphone11promaxbatteryreplacement = $_POST['iphone11promaxbatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphone11promaxbatteryreplacement WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxchargingport !== $_POST['iphone11promaxchargingport']){
-            $iphone11promaxchargingport = $_POST['iphone11promaxchargingport'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphone11promaxchargingport WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxheadphonejack !== $_POST['iphone11promaxheadphonejack']){
-            $iphone11promaxheadphonejack = $_POST['iphone11promaxheadphonejack'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphone11promaxheadphonejack WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxfrontcamera !== $_POST['iphone11promaxfrontcamera']){
-            $iphone11promaxfrontcamera = $_POST['iphone11promaxfrontcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphone11promaxfrontcamera WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxrearcamera !== $_POST['iphone11promaxrearcamera']){
-            $iphone11promaxrearcamera = $_POST['iphone11promaxrearcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphone11promaxrearcamera WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxrearcameralens !== $_POST['iphone11promaxrearcameralens']){
-            $iphone11promaxrearcameralens = $_POST['iphone11promaxrearcameralens'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphone11promaxrearcameralens WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxhomebutton !== $_POST['iphone11promaxhomebutton']){
-            $iphone11promaxhomebutton = $_POST['iphone11promaxhomebutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphone11promaxhomebutton WHERE `model`='11promax'");
-        }
-
-        if($iphone11promaxpowerbutton !== $_POST['iphone11promaxpowerbutton']){
-            $iphone11promaxpowerbutton = $_POST['iphone11promaxpowerbutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphone11promaxpowerbutton WHERE `model`='11promax'");
-        }
+        // if($iphone11propowerbutton !== $_POST['iphone11propowerbutton']){
+        //     $iphone11propowerbutton = $_POST['iphone11propowerbutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphone11propowerbutton WHERE `model`='11pro'");
+        // }
 
 
 
-        //
-        // iphone xs
-        //
-        if($iphonexsscreenrepair !== $_POST['iphonexsscreenrepair']){
-            $iphonexsscreenrepair = $_POST['iphonexsscreenrepair'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphonexsscreenrepair WHERE `model`='xs'");
-        }
+        // //
+        // // iphone 11promax
+        // //
+        // if($iphone11promaxscreenrepair !== $_POST['iphone11promaxscreenrepair']){
+        //     $iphone11promaxscreenrepair = $_POST['iphone11promaxscreenrepair'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11promaxscreenrepair WHERE `model`='11promax'");
+        // }
 
-        if($iphonexslcdtouch !== $_POST['iphonexslcdtouch']){
-            $iphonexslcdtouch = $_POST['iphonexslcdtouch'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphonexslcdtouch WHERE `model`='xs'");
-        }
+        // if($iphone11promaxlcdtouch !== $_POST['iphone11promaxlcdtouch']){
+        //     $iphone11promaxlcdtouch = $_POST['iphone11promaxlcdtouch'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphone11promaxlcdtouch WHERE `model`='11promax'");
+        // }
 
-        if($iphonexsbatteryreplacement !== $_POST['iphonexsbatteryreplacement']){
-            $iphonexsbatteryreplacement = $_POST['iphonexsbatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphonexsbatteryreplacement WHERE `model`='xs'");
-        }
+        // if($iphone11promaxbatteryreplacement !== $_POST['iphone11promaxbatteryreplacement']){
+        //     $iphone11promaxbatteryreplacement = $_POST['iphone11promaxbatteryreplacement'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphone11promaxbatteryreplacement WHERE `model`='11promax'");
+        // }
 
-        if($iphonexschargingport !== $_POST['iphonexschargingport']){
-            $iphonexschargingport = $_POST['iphonexschargingport'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphonexschargingport WHERE `model`='xs'");
-        }
+        // if($iphone11promaxchargingport !== $_POST['iphone11promaxchargingport']){
+        //     $iphone11promaxchargingport = $_POST['iphone11promaxchargingport'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphone11promaxchargingport WHERE `model`='11promax'");
+        // }
 
-        if($iphonexsheadphonejack !== $_POST['iphonexsheadphonejack']){
-            $iphonexsheadphonejack = $_POST['iphonexsheadphonejack'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphonexsheadphonejack WHERE `model`='xs'");
-        }
+        // if($iphone11promaxheadphonejack !== $_POST['iphone11promaxheadphonejack']){
+        //     $iphone11promaxheadphonejack = $_POST['iphone11promaxheadphonejack'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphone11promaxheadphonejack WHERE `model`='11promax'");
+        // }
 
-        if($iphonexsfrontcamera !== $_POST['iphonexsfrontcamera']){
-            $iphonexsfrontcamera = $_POST['iphonexsfrontcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphonexsfrontcamera WHERE `model`='xs'");
-        }
+        // if($iphone11promaxfrontcamera !== $_POST['iphone11promaxfrontcamera']){
+        //     $iphone11promaxfrontcamera = $_POST['iphone11promaxfrontcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphone11promaxfrontcamera WHERE `model`='11promax'");
+        // }
 
-        if($iphonexsrearcamera !== $_POST['iphonexsrearcamera']){
-            $iphonexsrearcamera = $_POST['iphonexsrearcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphonexsrearcamera WHERE `model`='xs'");
-        }
+        // if($iphone11promaxrearcamera !== $_POST['iphone11promaxrearcamera']){
+        //     $iphone11promaxrearcamera = $_POST['iphone11promaxrearcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphone11promaxrearcamera WHERE `model`='11promax'");
+        // }
 
-        if($iphonexsrearcameralens !== $_POST['iphonexsrearcameralens']){
-            $iphonexsrearcameralens = $_POST['iphonexsrearcameralens'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphonexsrearcameralens WHERE `model`='xs'");
-        }
+        // if($iphone11promaxrearcameralens !== $_POST['iphone11promaxrearcameralens']){
+        //     $iphone11promaxrearcameralens = $_POST['iphone11promaxrearcameralens'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphone11promaxrearcameralens WHERE `model`='11promax'");
+        // }
 
-        if($iphonexshomebutton !== $_POST['iphonexshomebutton']){
-            $iphonexshomebutton = $_POST['iphonexshomebutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphonexshomebutton WHERE `model`='xs'");
-        }
+        // if($iphone11promaxhomebutton !== $_POST['iphone11promaxhomebutton']){
+        //     $iphone11promaxhomebutton = $_POST['iphone11promaxhomebutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphone11promaxhomebutton WHERE `model`='11promax'");
+        // }
 
-        if($iphonexspowerbutton !== $_POST['iphonexspowerbutton']){
-            $iphonexspowerbutton = $_POST['iphonexspowerbutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphonexspowerbutton WHERE `model`='xs'");
-        }
+        // if($iphone11promaxpowerbutton !== $_POST['iphone11promaxpowerbutton']){
+        //     $iphone11promaxpowerbutton = $_POST['iphone11promaxpowerbutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphone11promaxpowerbutton WHERE `model`='11promax'");
+        // }
 
 
 
-        //
-        // iphone xsmax
-        //
-        if($iphonexsmaxscreenrepair !== $_POST['iphonexsmaxscreenrepair']){
-            $iphonexsmaxscreenrepair = $_POST['iphonexsmaxscreenrepair'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphonexsmaxscreenrepair WHERE `model`='xsmax'");
-        }
+        // //
+        // // iphone xs
+        // //
+        // if($iphonexsscreenrepair !== $_POST['iphonexsscreenrepair']){
+        //     $iphonexsscreenrepair = $_POST['iphonexsscreenrepair'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphonexsscreenrepair WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxlcdtouch !== $_POST['iphonexsmaxlcdtouch']){
-            $iphonexsmaxlcdtouch = $_POST['iphonexsmaxlcdtouch'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphonexsmaxlcdtouch WHERE `model`='xsmax'");
-        }
+        // if($iphonexslcdtouch !== $_POST['iphonexslcdtouch']){
+        //     $iphonexslcdtouch = $_POST['iphonexslcdtouch'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphonexslcdtouch WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxbatteryreplacement !== $_POST['iphonexsmaxbatteryreplacement']){
-            $iphonexsmaxbatteryreplacement = $_POST['iphonexsmaxbatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphonexsmaxbatteryreplacement WHERE `model`='xsmax'");
-        }
+        // if($iphonexsbatteryreplacement !== $_POST['iphonexsbatteryreplacement']){
+        //     $iphonexsbatteryreplacement = $_POST['iphonexsbatteryreplacement'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphonexsbatteryreplacement WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxchargingport !== $_POST['iphonexsmaxchargingport']){
-            $iphonexsmaxchargingport = $_POST['iphonexsmaxchargingport'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphonexsmaxchargingport WHERE `model`='xsmax'");
-        }
+        // if($iphonexschargingport !== $_POST['iphonexschargingport']){
+        //     $iphonexschargingport = $_POST['iphonexschargingport'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphonexschargingport WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxheadphonejack !== $_POST['iphonexsmaxheadphonejack']){
-            $iphonexsmaxheadphonejack = $_POST['iphonexsmaxheadphonejack'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphonexsmaxheadphonejack WHERE `model`='xsmax'");
-        }
+        // if($iphonexsheadphonejack !== $_POST['iphonexsheadphonejack']){
+        //     $iphonexsheadphonejack = $_POST['iphonexsheadphonejack'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphonexsheadphonejack WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxfrontcamera !== $_POST['iphonexsmaxfrontcamera']){
-            $iphonexsmaxfrontcamera = $_POST['iphonexsmaxfrontcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphonexsmaxfrontcamera WHERE `model`='xsmax'");
-        }
+        // if($iphonexsfrontcamera !== $_POST['iphonexsfrontcamera']){
+        //     $iphonexsfrontcamera = $_POST['iphonexsfrontcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphonexsfrontcamera WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxrearcamera !== $_POST['iphonexsmaxrearcamera']){
-            $iphonexsmaxrearcamera = $_POST['iphonexsmaxrearcamera'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphonexsmaxrearcamera WHERE `model`='xsmax'");
-        }
+        // if($iphonexsrearcamera !== $_POST['iphonexsrearcamera']){
+        //     $iphonexsrearcamera = $_POST['iphonexsrearcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphonexsrearcamera WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxrearcameralens !== $_POST['iphonexsmaxrearcameralens']){
-            $iphonexsmaxrearcameralens = $_POST['iphonexsmaxrearcameralens'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphonexsmaxrearcameralens WHERE `model`='xsmax'");
-        }
+        // if($iphonexsrearcameralens !== $_POST['iphonexsrearcameralens']){
+        //     $iphonexsrearcameralens = $_POST['iphonexsrearcameralens'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphonexsrearcameralens WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxhomebutton !== $_POST['iphonexsmaxhomebutton']){
-            $iphonexsmaxhomebutton = $_POST['iphonexsmaxhomebutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphonexsmaxhomebutton WHERE `model`='xsmax'");
-        }
+        // if($iphonexshomebutton !== $_POST['iphonexshomebutton']){
+        //     $iphonexshomebutton = $_POST['iphonexshomebutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphonexshomebutton WHERE `model`='xs'");
+        // }
 
-        if($iphonexsmaxpowerbutton !== $_POST['iphonexsmaxpowerbutton']){
-            $iphonexsmaxpowerbutton = $_POST['iphonexsmaxpowerbutton'];
-            $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphonexsmaxpowerbutton WHERE `model`='xsmax'");
-        }
+        // if($iphonexspowerbutton !== $_POST['iphonexspowerbutton']){
+        //     $iphonexspowerbutton = $_POST['iphonexspowerbutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphonexspowerbutton WHERE `model`='xs'");
+        // }
+
+
+
+        // //
+        // // iphone xsmax
+        // //
+        // if($iphonexsmaxscreenrepair !== $_POST['iphonexsmaxscreenrepair']){
+        //     $iphonexsmaxscreenrepair = $_POST['iphonexsmaxscreenrepair'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphonexsmaxscreenrepair WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxlcdtouch !== $_POST['iphonexsmaxlcdtouch']){
+        //     $iphonexsmaxlcdtouch = $_POST['iphonexsmaxlcdtouch'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `lcdtouch`=$iphonexsmaxlcdtouch WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxbatteryreplacement !== $_POST['iphonexsmaxbatteryreplacement']){
+        //     $iphonexsmaxbatteryreplacement = $_POST['iphonexsmaxbatteryreplacement'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `batteryreplacement`=$iphonexsmaxbatteryreplacement WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxchargingport !== $_POST['iphonexsmaxchargingport']){
+        //     $iphonexsmaxchargingport = $_POST['iphonexsmaxchargingport'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `chargingport`=$iphonexsmaxchargingport WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxheadphonejack !== $_POST['iphonexsmaxheadphonejack']){
+        //     $iphonexsmaxheadphonejack = $_POST['iphonexsmaxheadphonejack'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphonexsmaxheadphonejack WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxfrontcamera !== $_POST['iphonexsmaxfrontcamera']){
+        //     $iphonexsmaxfrontcamera = $_POST['iphonexsmaxfrontcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphonexsmaxfrontcamera WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxrearcamera !== $_POST['iphonexsmaxrearcamera']){
+        //     $iphonexsmaxrearcamera = $_POST['iphonexsmaxrearcamera'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcamera`=$iphonexsmaxrearcamera WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxrearcameralens !== $_POST['iphonexsmaxrearcameralens']){
+        //     $iphonexsmaxrearcameralens = $_POST['iphonexsmaxrearcameralens'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `rearcameralens`=$iphonexsmaxrearcameralens WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxhomebutton !== $_POST['iphonexsmaxhomebutton']){
+        //     $iphonexsmaxhomebutton = $_POST['iphonexsmaxhomebutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `homebutton`=$iphonexsmaxhomebutton WHERE `model`='xsmax'");
+        // }
+
+        // if($iphonexsmaxpowerbutton !== $_POST['iphonexsmaxpowerbutton']){
+        //     $iphonexsmaxpowerbutton = $_POST['iphonexsmaxpowerbutton'];
+        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `powerbutton`=$iphonexsmaxpowerbutton WHERE `model`='xsmax'");
+        // }
         
 
     } 
