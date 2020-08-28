@@ -327,20 +327,20 @@ function appleSubMenu(){
                     // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
                     // $wpdb->query($sql);
                     include_once(__DIR__.'/AppleInputFunctions.php');
-                    if(isset($_POST['iphone11screenrepair'])){
-                        $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
-                    }
-                    // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
-                    // global $wpdb;
-                    if(isset($_POST['iphone-save'])) { 
+                    // if(isset($_POST['iphone11screenrepair'])){
+                    //     $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
+                    // }
+                    // // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
+                    // // global $wpdb;
+                    // if(isset($_POST['iphone-save'])) { 
 
-                        if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
-                            $iphone11screenrepair = $_POST['iphone11screenrepair'];
-                            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
-                        }
+                    //     if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
+                    //         $iphone11screenrepair = $_POST['iphone11screenrepair'];
+                    //         $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
+                    //     }
                         
 
-                    } 
+                    // } 
                 ?> 
         </div>
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
