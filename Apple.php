@@ -368,12 +368,12 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" readonly /></td>
+                    <td class="submenu-price-field"><input maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11screenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength="4" name="iphone11proscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="iphone11promaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="iphonexsscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsscreenrepair ?>" readonly /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="iphonexsmaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
+                    <td class="submenu-price-field"><input maxlength="4" name="iphone11proscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength="4" name="iphone11promaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength="4" name="iphonexsscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsscreenrepair ?>"  /></td>
+                    <td class="submenu-price-field"><input maxlength="4" name="iphonexsmaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>"  /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
