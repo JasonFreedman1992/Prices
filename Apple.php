@@ -214,6 +214,7 @@ function appleSubMenu(){
 
         h1.submenu-heading1{
             display: inline-block;
+            top: -35px;
         }
 
         table.submenu-table{
