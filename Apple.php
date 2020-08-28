@@ -336,8 +336,8 @@ function appleSubMenu(){
             <input type="button" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
             </form> -->
         </div>
-          <!-- <form method="post"> 
-    <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
+        <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
