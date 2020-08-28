@@ -310,12 +310,16 @@ function appleSubMenu(){
             </h1>
 
             <?php
-      
+                                    echo '<script>';
+                                    echo 'console.log('. json_encode( "SUP1" ) .')';
+                                    echo '</script>';
                 if(isset($_POST['iphone-save'])){
                     // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
-
+                    echo '<script>';
+                    echo 'console.log('. json_encode( "SUP1" ) .')';
+                    echo '</script>';
                     // $wpdb->query($sql);
-                    echo 'fuckyeah';
+                    // echo 'fuckyeah';
                 }
             ?> 
 
