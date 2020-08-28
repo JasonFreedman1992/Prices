@@ -277,7 +277,7 @@ function appleSubMenu(){
 
         input.submenu-table-input{
             width: 60px;
-            border:1px solid red;
+            border:1px solid #3471D1;
         }
 
         td.submenu-price-field{
