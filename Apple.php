@@ -311,7 +311,7 @@ function appleSubMenu(){
 
         <div class="submenu-wrapper2">
         <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
+        <!-- <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
@@ -344,6 +344,7 @@ function appleSubMenu(){
                     } 
                 ?> 
         </div>
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <!-- <form method="post"> 
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
