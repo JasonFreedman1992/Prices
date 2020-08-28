@@ -90,12 +90,10 @@
             $price = $wpdb->get_results("UPDATE `appleiphone` SET `headphonejack`=$iphone11headphonejack WHERE `model`='11'");
         }
 
-        if(isset($_POST['iphone11frontcamera'])) { 
         if($iphone11frontcamera !== $_POST['iphone11frontcamera']){
             $iphone11frontcamera = $_POST['iphone11frontcamera'];
             $price = $wpdb->get_results("UPDATE `appleiphone` SET `frontcamera`=$iphone11frontcamera WHERE `model`='11'");
         }
-    }
 
         if($iphone11rearcamera !== $_POST['iphone11rearcamera']){
             $iphone11rearcamera = $_POST['iphone11rearcamera'];
