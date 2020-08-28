@@ -10,11 +10,6 @@
     if(isset($_POST['iphone-save'])) { 
 
         if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
-            echo '<script>';
-            echo 'console.log('. json_encode("iphone11screenrepair") .');';
-            echo 'document.getElementById('. json_encode("iphone11screenrepair") .').style.border = '.json_encode("border:1px solid red").';';
-            echo 'console.log('. json_encode( "something is happening" ) .')';
-            echo '</script>';
             $iphone11screenrepair = $_POST['iphone11screenrepair'];
             $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepair WHERE `model`='11'");
         }
