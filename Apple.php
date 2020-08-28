@@ -319,13 +319,13 @@ function appleSubMenu(){
                     
                     
                     // global $wpdb;
-                    // if(isset($_POST['iphone-save'])) { 
-                    //     // echo "This is iPhone-button1";
-                    //     // echo '<script>';
-                    //     // echo 'console.log('. json_encode( "SUP1" ) .')';
-                    //     // echo '</script>';
-                    //     $iphone11screenrepairprice = $_POST['iphone11screenrepair']
-                    //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='250' WHERE `model`='11'");
+                    if(isset($_POST['iphone-save'])) { 
+                        // echo "This is iPhone-button1";
+                        // echo '<script>';
+                        // echo 'console.log('. json_encode( "SUP1" ) .')';
+                        // echo '</script>';
+                        $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
+                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='250' WHERE `model`='11'");
 
                     // } 
                 ?> 
