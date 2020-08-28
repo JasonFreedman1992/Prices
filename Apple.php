@@ -308,6 +308,23 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
+
+            <?php
+      
+                if(isset($_POST['iphone-save'])){
+                    // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
+
+                    // $wpdb->query($sql);
+                    echo 'fuckyeah';
+                }
+            ?> 
+
+            if(isset($_POST['iphone-save'])){
+        // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
+
+        // $wpdb->query($sql);
+        echo 'fuckyeah';
+    }
             <button name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
