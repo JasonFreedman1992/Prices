@@ -326,13 +326,13 @@ function appleSubMenu(){
                     // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                     // global $wpdb;
                     if(isset($_POST['iphone-save'])) { 
+                        $iphone11screenrepair = $_POST['iphone11screenrepair'];
                         // echo "This is iPhone-button1";
                         echo '<script>';
                         echo 'console.log('. json_encode( $iphone11screenrepairprice ) .')';
                         echo '</script>';
                         
                         $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
-                        $iphone11screenrepair = $iphone11screenrepairprice;
 
                     } 
                 ?> 
