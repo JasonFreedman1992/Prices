@@ -189,6 +189,28 @@ function appleSubMenu(){
     // <th>iPhone XS</th>
     // <th>iPhone XS Max</th>
 
+    // document.getElementsByClassName('iphoneinputs').onchange = function() {
+    //     document.getElementById('yourText').disabled = !this.checked;
+    // };
+    // iphoneinputs.forEach(disable)
+    // for(var i = 0; i < buttons.length; i++) {
+    //     if(buttons[i].style.display === "none"){
+    //         buttons[i].style.display = "inline-block";
+    //     }
+    //     else{
+    //         buttons[i].style.display = "none";
+    //     }
+        
+    //     // iphoneinputs[i] = (e) => {
+    //     //     e.currentTarget.style.display = "none"
+    //     // }
+    // }
+    // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
+    // // console.log(iphoneinputs);
+    // iphoneinputs.disabled = switchapple.checked ? false : true;
+    // console.log("clicking da box");
+    // console.log(iphoneinputs.length);
+
     ?>
 
     <style>
@@ -250,15 +272,6 @@ function appleSubMenu(){
 
     <script>
 
-        // document.getElementsByClassName('iphoneinputs').onchange = function() {
-        //     document.getElementById('yourText').disabled = !this.checked;
-        // };
-
-
-        // iphoneinputs.forEach(disable)
-
-
-
         function EnableDisableTextBox(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
@@ -285,23 +298,6 @@ function appleSubMenu(){
                 else{
                     button.style.display = "none";
                 }
-            // for(var i = 0; i < buttons.length; i++) {
-            //     if(buttons[i].style.display === "none"){
-            //         buttons[i].style.display = "inline-block";
-            //     }
-            //     else{
-            //         buttons[i].style.display = "none";
-            //     }
-                
-            //     // iphoneinputs[i] = (e) => {
-            //     //     e.currentTarget.style.display = "none"
-            //     // }
-            // }
-            // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
-            // // console.log(iphoneinputs);
-            // iphoneinputs.disabled = switchapple.checked ? false : true;
-            // console.log("clicking da box");
-            // console.log(iphoneinputs.length);
         }
     </script>
 
