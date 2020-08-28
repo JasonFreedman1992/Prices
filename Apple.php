@@ -301,8 +301,7 @@ function appleSubMenu(){
         <!-- iPhone 2 -->
         <!-- iPhone 3 -->
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-        <form class="iphone-form" method="post">
-        <label class="iphone-form-label"/>
+
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
@@ -419,7 +418,7 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
-        </form>
+
 
         <!-- iPad 1 -->
         <!-- iPad 2 -->
