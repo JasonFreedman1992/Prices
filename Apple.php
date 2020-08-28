@@ -298,9 +298,6 @@ function appleSubMenu(){
         }
     </script>
 
-    <div class="submenu-wrapper">
-    
-
         <!-- iPhone 1 -->
         <!-- iPhone 2 -->
         <!-- iPhone 3 -->
@@ -598,7 +595,6 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
-    </div>
     <!-- more HTML code here -->
     <?php   // back to PHP
 
