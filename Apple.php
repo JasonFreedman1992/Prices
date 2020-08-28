@@ -313,6 +313,9 @@ function appleSubMenu(){
         <!-- iPhone 3 -->
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 
+        <div class="submenu-wrapper2">
+        <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
@@ -344,15 +347,7 @@ function appleSubMenu(){
 
                     } 
                 ?> 
-    
-   
-    <!-- <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
-            
         </div>
-        <div class="submenu-wrapper2">
-        <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
         <!-- <form method="post"> 
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
