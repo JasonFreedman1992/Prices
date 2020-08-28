@@ -250,6 +250,8 @@ function appleSubMenu(){
 
         // iphoneinputs.forEach(disable)
 
+
+
         function EnableDisableTextBox(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
@@ -293,18 +295,21 @@ function appleSubMenu(){
     </script>
 
     <div class="submenu-wrapper">
+    
 
         <!-- iPhone 1 -->
         <!-- iPhone 2 -->
         <!-- iPhone 3 -->
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+        <form class="iphone-form" method="post">
+        <label class="iphone-form-label"/>
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-            <button id="iphone-save" style="margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
+            <button name="iphone-save" id="iphone-save" style="margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
@@ -414,6 +419,7 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
+        </form>
 
         <!-- iPad 1 -->
         <!-- iPad 2 -->
