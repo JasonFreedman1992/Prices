@@ -262,19 +262,25 @@ function appleSubMenu(){
                 // }
             }
 
-            var buttons = document.getElementsByClassName("pure-button");
-            for(var i = 0; i < buttons.length; i++) {
+            var buttons = document.getElementById("iphone-save");
                 if(buttons[i].style.display === "none"){
                     buttons[i].style.display = "inline-block";
                 }
                 else{
                     buttons[i].style.display = "none";
                 }
+            // for(var i = 0; i < buttons.length; i++) {
+            //     if(buttons[i].style.display === "none"){
+            //         buttons[i].style.display = "inline-block";
+            //     }
+            //     else{
+            //         buttons[i].style.display = "none";
+            //     }
                 
-                // iphoneinputs[i] = (e) => {
-                //     e.currentTarget.style.display = "none"
-                // }
-            }
+            //     // iphoneinputs[i] = (e) => {
+            //     //     e.currentTarget.style.display = "none"
+            //     // }
+            // }
             // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             // // console.log(iphoneinputs);
             // iphoneinputs.disabled = switchapple.checked ? false : true;
@@ -295,7 +301,7 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-            <button style="margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
+            <button id="iphone-save" style="margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
