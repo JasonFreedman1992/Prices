@@ -340,6 +340,9 @@ function appleSubMenu(){
 
                 <?php
 
+                    //
+                    // file imports for Apple Input Functions
+                    //
                     include_once(__DIR__.'/AppleInputFunctions.php');
 
                 ?> 
@@ -375,7 +378,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11lcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11lcdtouch ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prolcdtouch ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexslcdtouch ?>" /></td>
@@ -384,7 +387,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Battery</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11batteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11batteryreplacement ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11probatteryreplacement ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
@@ -393,7 +396,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Charging Port</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11chargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11chargingport ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prochargingport ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxchargingport ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexschargingport ?>" /></td>
@@ -402,7 +405,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11headphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11headphonejack ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proheadphonejack ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsheadphonejack ?>" /></td>
@@ -411,7 +414,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Front Camera</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11frontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11frontcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11profrontcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsfrontcamera ?>" /></td>
@@ -420,7 +423,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11rearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcamera ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcamera ?>" /></td>
@@ -429,7 +432,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11rearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcameralens ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcameralens ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcameralens ?>" /></td>
@@ -438,7 +441,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Home Button</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11homebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11homebutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prohomebutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxhomebutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexshomebutton ?>" /></td>
@@ -447,7 +450,7 @@ function appleSubMenu(){
                 <tr>
                     <td>Repair/Replace Power Button</td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input name="iphone11powerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11powerbutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11propowerbutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
                     <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexspowerbutton ?>" /></td>
