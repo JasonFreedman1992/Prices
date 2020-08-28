@@ -210,7 +210,6 @@ function appleSubMenu(){
         .submenu-heading{
             width:480px;
             text-align: center;
-            text-align: center;
         }
 
         h1.submenu-heading1{
@@ -332,12 +331,12 @@ function appleSubMenu(){
                 ?> 
     
    
-            <!-- <form method="post"> 
-            <input type="button" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
+    <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
             </form> -->
         </div>
-        <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
+        <!-- <form method="post"> 
+        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
