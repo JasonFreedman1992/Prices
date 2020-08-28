@@ -205,18 +205,18 @@ function appleSubMenu(){
 
         .submenu-wrapper{
             /* padding-top: 20px; */
-            display: inline-block;
+            display: block;
         }
 
         .submenu-wrapper2{
             /* padding-top: 20px; */
-            display: inline-block;
+            display: inline;
         }
 
         .submenu-heading{
             width:480px;
             text-align: center;
-            display: inline-block;
+            display: inline;
         }
 
         h1.submenu-heading1{
