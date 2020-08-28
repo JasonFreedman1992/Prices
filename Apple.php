@@ -297,7 +297,7 @@ function appleSubMenu(){
         }
     </script>
 
-    <div name="top-wrapper" class="submenu-wrapper">
+    <div class="submenu-wrapper">
     
 
         <!-- iPhone 1 -->
@@ -320,18 +320,18 @@ function appleSubMenu(){
                                             // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
                         // $wpdb->query($sql);
                     
-                    if(isset($_POST['top-wrapper'])){
+                    if(isset($_POST['iphone11screenrepair'])){
                         $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                     }
                     // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
                     // global $wpdb;
-                    if(isset($_POST['top-wrapper'])) { 
+                    if(isset($_POST['iphone-save'])) { 
                         // echo "This is iPhone-button1";
                         echo '<script>';
                         echo 'console.log('. json_encode( $iphone11screenrepairprice ) .')';
                         echo '</script>';
                         
-                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='950' WHERE `model`='11'");
+                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
 
                     } 
                 ?> 
