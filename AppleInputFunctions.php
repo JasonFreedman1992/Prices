@@ -11,6 +11,7 @@
 
         if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
             echo '<script>';
+            echo 'console.log('. json_encode("iphone11screenrepair") .')';
             echo 'var input = document.getElementById('. json_encode("iphone11screenrepair") .');';
             echo 'input.style.border = '.json_encode("border:1px solid red").';';
             echo 'console.log('. json_encode( "something is happening" ) .')';
