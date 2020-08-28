@@ -255,10 +255,13 @@ function appleSubMenu(){
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
                 if(iphoneinputs[i].disabled === true){
-                    iphoneinputs[i].disabled = false;
+                    // iphoneinputs[i].disabled = false;
+                    iphoneinputs[i].readOnly = false;
+
                 }
                 else{
-                    iphoneinputs[i].disabled = true;
+                    // iphoneinputs[i].disabled = true;
+                    iphoneinputs[i].readOnly = true;
                 }
                 
                 // iphoneinputs[i] = (e) => {
@@ -357,93 +360,93 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXscreenrepair ?>" disabled /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" readonly /></td>
                     <td class="submenu-price-field"><input name="iphone11screenrepair" class="submenu-table-input iphoneinputs" type="text" value="<?php echo $iphone11screenrepair ?>" enabled /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11proscreenrepair ?>" disabled /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxscreenrepair ?>" disabled /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsscreenrepair ?>" disabled /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxscreenrepair ?>" disabled /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proscreenrepair ?>" readonly /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" readonly /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsscreenrepair ?>" readonly /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxscreenrepair ?>" readonly /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11prolcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexslcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prolcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexslcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11probatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11probatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11prochargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexschargingport ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prochargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexschargingport ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11proheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11profrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11profrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11prorearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11prorearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11prohomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexshomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prohomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexshomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphoneXpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11propowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexspowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" disabled value="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11propowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexspowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
