@@ -12,10 +12,10 @@
         //
         // iphone X
         //
-        // if($iphoneXscreenrepair !== $_POST['iphoneXscreenrepair']){
-        //     $iphoneXscreenrepair = $_POST['iphoneXscreenrepair'];
-        //     $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphoneXscreenrepair WHERE `model`='X'");
-        // }
+        if($iphoneXscreenrepair !== $_POST['iphoneXscreenrepair']){
+            $iphoneXscreenrepair = $_POST['iphoneXscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphoneXscreenrepair WHERE `model`='X'");
+        }
 
         // if($iphoneXlcdtouch !== $_POST['iphoneXlcdtouch']){
         //     $iphoneXlcdtouch = $_POST['iphoneXlcdtouch'];
