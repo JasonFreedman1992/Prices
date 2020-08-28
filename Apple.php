@@ -583,24 +583,5 @@ function appleSubMenu(){
 
 
 }
-// $price2 = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11pro'");
-
-// function iphone_insert_data(){
-
-    // global $wpdb;
-    // $table_name= $wpdb->prefix.`appleiphone`;
-
-    // $cost=$_POST['iphone11screenrepair'];
-
-    if(isset($_POST['iphone-save'])){
-        // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
-
-        // $wpdb->query($sql);
-        echo 'fuckyeah';
-    }
-
-    // echo 'console.log('. json_encode( 'HelloTesting' ) .')';
-
-// }
 
 ?>
