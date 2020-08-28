@@ -331,7 +331,7 @@ function appleSubMenu(){
                         echo 'console.log('. json_encode( $iphone11screenrepairprice ) .')';
                         echo '</script>';
                         
-                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='150' WHERE `model`='11'");
+                        $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`='950' WHERE `model`='11'");
 
                     } 
                 ?> 
