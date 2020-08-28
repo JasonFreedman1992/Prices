@@ -309,39 +309,22 @@ function appleSubMenu(){
                 iPhone
             </h1>
 
-            <?php
-                                    // echo '<script>';
-                                    // echo 'console.log('. json_encode( "SUP1" ) .')';
-                                    // echo '</script>';
-                if(isset($_POST['iphone-save'])){
-                    // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
-                    echo '<script>';
-                    echo 'console.log('. json_encode( "SUP1" ) .')';
-                    echo '</script>';
-                    // $wpdb->query($sql);
-                    // echo 'fuckyeah';
-                }
-            ?> 
+
                 <?php
-      
-      if(isset($_POST['button1'])) { 
-          echo "This is Button1 that is selected"; 
-      } 
-      if(isset($_POST['button2'])) { 
-          echo "This is Button2 that is selected"; 
-      } 
-  ?> 
+                    if(isset($_POST['iphone-save'])) { 
+                        echo "This is iPhone-button1";
+                        echo '<script>';
+                        echo 'console.log('. json_encode( "SUP1" ) .')';
+                        echo '</script>';
+                    } 
+                ?> 
     
   <form method="post"> 
-      <input type="submit" name="button1"
-              value="Button1"/> 
-        
-      <input type="submit" name="button2"
-              value="Button2"/> 
+    <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
   </form> 
-            <form method="post"> 
+            <!-- <form method="post"> 
             <input type="button" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
-            </form>
+            </form> -->
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
