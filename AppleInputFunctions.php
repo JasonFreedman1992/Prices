@@ -14,6 +14,7 @@
         //
         if($iphoneXscreenrepair !== $_POST['iphoneXscreenrepair']){
             $iphoneXscreenrepair = $_POST['iphoneXscreenrepair'];
+            $iphoneXscreenrepair = strval($iphoneXscreenrepair);
             $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphoneXscreenrepair WHERE `model`='X'");
         }
 
