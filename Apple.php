@@ -350,6 +350,34 @@ function appleSubMenu(){
                 button1.style.display = "none";
             }
         }
+
+        function EnableDisableTextBoxiWatch(switchapple) {
+            var iwatchinputs = document.getElementsByClassName("iwatchinputs");
+            for(var i = 0; i < iwatchinputs.length; i++) {
+                // if(iphoneinputs[i].disabled === true){
+                if(iwatchinputs[i].readOnly === true){
+                    // iphoneinputs[i].disabled = false;
+                    iwatchinputs[i].readOnly = false;
+
+                }
+                else{
+                    // iphoneinputs[i].disabled = true;
+                    iwatchinputs[i].readOnly = true;
+                }
+                
+                // iphoneinputs[i] = (e) => {
+                //     e.currentTarget.style.display = "none"
+                // }
+            }
+
+            var button2 = document.getElementById("iwatch-save");
+            if(button2.style.display === "none"){
+                button2.style.display = "inline-block";
+            }
+            else{
+                button2.style.display = "none";
+            }
+        }
     </script>
 
     <div class="submenu-wrapper">
@@ -602,14 +630,14 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iWatch
             </h1>
-            <button style="margin-bottom: 7.4px;margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
+            <button id="iwatch-save" name="iwatch-save" type="submit" style="margin-bottom: 7.4px;margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
                     <th>            
                         <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input id="iwatchswitch"  checked type="checkbox"/>
+                        <input onclick="EnableDisableTextBoxiWatch(this)" id="iwatchswitch"  checked type="checkbox"/>
                     </th>
                     <th>Series 4 40mm</th>
                     <th>Series 4 44mm</th>
