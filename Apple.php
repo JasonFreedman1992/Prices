@@ -524,7 +524,7 @@ function appleSubMenu(){
         <!-- iPad 1 -->
         <!-- iPad 2 -->
         <!-- iPad 3 -->
-
+        <form method="post"> 
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
@@ -619,11 +619,13 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
+        </form>
 
         <!-- iWatch 1 -->
         <!-- iWatch 2 -->
         <!-- iWatch 3 -->
 
+        <form method="post"> 
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
@@ -662,6 +664,7 @@ function appleSubMenu(){
                 </tr>
             </tbody>
         </table>
+        </form>
         </div>
     </div>
     <!-- more HTML code here -->
