@@ -170,6 +170,11 @@ function appleSubMenu(){
     $series4_40mbatteryreplacement = $price13[0]->batteryreplacement;
     $series4_40mscreenrepair = $price13[0]->screenrepair;
 
+    //
+    // apple helper functions
+    //
+    include_once(__DIR__.'/AppleInputFunctions.php');
+
     // screenrepair
     // lcdtouch
     // batteryreplacement
@@ -290,7 +295,7 @@ function appleSubMenu(){
 
     <script>
 
-        function EnableDisableTextBox(switchapple) {
+        function EnableDisableTextBoxiPhone(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
                 // if(iphoneinputs[i].disabled === true){
@@ -310,12 +315,40 @@ function appleSubMenu(){
             }
 
             var button = document.getElementById("iphone-save");
-                if(button.style.display === "none"){
-                    button.style.display = "inline-block";
+            if(button.style.display === "none"){
+                button.style.display = "inline-block";
+            }
+            else{
+                button.style.display = "none";
+            }
+        }
+
+        function EnableDisableTextBoxiPad(switchapple) {
+            var ipadeinputs = document.getElementsByClassName("ipadinputs");
+            for(var i = 0; i < ipadinputs.length; i++) {
+                // if(iphoneinputs[i].disabled === true){
+                if(ipadinputs[i].readOnly === true){
+                    // iphoneinputs[i].disabled = false;
+                    ipadinputs[i].readOnly = false;
+
                 }
                 else{
-                    button.style.display = "none";
+                    // iphoneinputs[i].disabled = true;
+                    ipadinputs[i].readOnly = true;
                 }
+                
+                // iphoneinputs[i] = (e) => {
+                //     e.currentTarget.style.display = "none"
+                // }
+            }
+
+            var button = document.getElementById("ipad-save");
+            if(button.style.display === "none"){
+                button.style.display = "inline-block";
+            }
+            else{
+                button.style.display = "none";
+            }
         }
     </script>
 
@@ -343,7 +376,7 @@ function appleSubMenu(){
                     //
                     // file imports for Apple Input Functions
                     //
-                    include_once(__DIR__.'/AppleInputFunctions.php');
+                    // include_once(__DIR__.'/AppleInputFunctions.php');
 
                 ?> 
         </div>
@@ -355,7 +388,7 @@ function appleSubMenu(){
                 <tr>
                     <th>            
                         <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input onclick="EnableDisableTextBox(this)" id="switchapple" type="checkbox" checked/>
+                        <input onclick="EnableDisableTextBoxiPhone(this)" id="switchapple" type="checkbox" checked/>
                     </th>
                     <th>iPhone X</th>
                     <th>iPhone 11</th>
@@ -470,14 +503,14 @@ function appleSubMenu(){
             <h1 class="submenu-heading1">
                 iPad
             </h1>
-            <button style="margin-left: 20px; margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
+            <button id="ipad-save" name="ipad-save" type="submit" style="margin-left: 20px; margin-bottom: 7.4px;" class="pure-button pure-button-primary">Save</button>
         </div>
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
                     <th>            
                         <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input id="ipadswitch" type="checkbox" checked/>
+                        <input onclick="EnableDisableTextBoxiPad(this)" id="ipadswitch" type="checkbox" checked/>
                     </th>
                     <th>iPad Pro 9.7</th>
                     <th>iPad Pro 10.5</th>
@@ -488,73 +521,73 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97screenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105screenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97chargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105chargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genchargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genchargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97headphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105headphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97frontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105frontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97rearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105rearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97homebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105homebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro97powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro105powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input ipadinputs" type="text" disabled value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro97powerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro105powerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro11_2genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="ipadpro129_4genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -587,17 +620,17 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" disabled value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>
