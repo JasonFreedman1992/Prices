@@ -648,17 +648,17 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series4_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series4_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series5_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series5_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input maxlength= "4" name="X$%X" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series4_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series4_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series5_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input maxlength= "4" name="series5_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>

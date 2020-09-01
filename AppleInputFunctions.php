@@ -339,4 +339,271 @@
 
     } 
 
+    if(isset($_POST['ipad-save'])) { 
+        //
+        // ipadpro97
+        //
+        if($ipadpro97screenrepair !== $_POST['ipadpro97screenrepair']){
+            $ipadpro97screenrepair = $_POST['ipadpro97screenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `screenrepair`=$ipadpro97screenrepair WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97lcdtouch !== $_POST['ipadpro97lcdtouch']){
+            $ipadpro97lcdtouch = $_POST['ipadpro97lcdtouch'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `lcdtouch`=$ipadpro97lcdtouch WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97batteryreplacement !== $_POST['ipadpro97batteryreplacement']){
+            $ipadpro97batteryreplacement = $_POST['ipadpro97batteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `batteryreplacement`=$ipadpro97batteryreplacement WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97chargingport !== $_POST['ipadpro97chargingport']){
+            $ipadpro97chargingport = $_POST['ipadpro97chargingport'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `chargingport`=$ipadpro97chargingport WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97headphonejack !== $_POST['ipadpro97headphonejack']){
+            $ipadpro97headphonejack = $_POST['ipadpro97headphonejack'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `headphonejack`=$ipadpro97headphonejack WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97frontcamera !== $_POST['ipadpro97frontcamera']){
+            $ipadpro97frontcamera = $_POST['ipadpro97frontcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `frontcamera`=$ipadpro97frontcamera WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97rearcamera !== $_POST['ipadpro97rearcamera']){
+            $ipadpro97rearcamera = $_POST['ipadpro97rearcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcamera`=$ipadpro97rearcamera WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97rearcameralens !== $_POST['ipadpro97rearcameralens']){
+            $ipadpro97rearcameralens = $_POST['ipadpro97rearcameralens'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcameralens`=$ipadpro97rearcameralens WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97homebutton !== $_POST['ipadpro97homebutton']){
+            $ipadpro97homebutton = $_POST['ipadpro97homebutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `homebutton`=$ipadpro97homebutton WHERE `model`='pro97'");
+        }
+
+        if($ipadpro97powerbutton !== $_POST['ipadpro97powerbutton']){
+            $ipadpro97powerbutton = $_POST['ipadpro97powerbutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `powerbutton`=$ipadpro97powerbutton WHERE `model`='pro97'");
+        }
+
+
+
+        //
+        // ipadpro105
+        //
+        if($ipadpro105screenrepair !== $_POST['ipadpro105screenrepair']){
+            $ipadpro105screenrepair = $_POST['ipadpro105screenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `screenrepair`=$ipadpro105screenrepair WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105lcdtouch !== $_POST['ipadpro105lcdtouch']){
+            $ipadpro105lcdtouch = $_POST['ipadpro105lcdtouch'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `lcdtouch`=$ipadpro105lcdtouch WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105batteryreplacement !== $_POST['ipadpro105batteryreplacement']){
+            $ipadpro105batteryreplacement = $_POST['ipadpro105batteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `batteryreplacement`=$ipadpro105batteryreplacement WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105chargingport !== $_POST['ipadpro105chargingport']){
+            $ipadpro105chargingport = $_POST['ipadpro105chargingport'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `chargingport`=$ipadpro105chargingport WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105headphonejack !== $_POST['ipadpro105headphonejack']){
+            $ipadpro105headphonejack = $_POST['ipadpro105headphonejack'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `headphonejack`=$ipadpro105headphonejack WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105frontcamera !== $_POST['ipadpro105frontcamera']){
+            $ipadpro105frontcamera = $_POST['ipadpro105frontcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `frontcamera`=$ipadpro105frontcamera WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105rearcamera !== $_POST['ipadpro105rearcamera']){
+            $ipadpro105rearcamera = $_POST['ipadpro105rearcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcamera`=$ipadpro105rearcamera WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105rearcameralens !== $_POST['ipadpro105rearcameralens']){
+            $ipadpro105rearcameralens = $_POST['ipadpro105rearcameralens'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcameralens`=$ipadpro105rearcameralens WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105homebutton !== $_POST['ipadpro105homebutton']){
+            $ipadpro105homebutton = $_POST['ipadpro105homebutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `homebutton`=$ipadpro105homebutton WHERE `model`='pro105'");
+        }
+
+        if($ipadpro105powerbutton !== $_POST['ipadpro105powerbutton']){
+            $ipadpro105powerbutton = $_POST['ipadpro105powerbutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `powerbutton`=$ipadpro105powerbutton WHERE `model`='pro105'");
+        }
+
+
+
+        //
+        // ipadpro11_2gen
+        //
+        if($ipadpro11_2genscreenrepair !== $_POST['ipadpro11_2genscreenrepair']){
+            $ipadpro11_2genscreenrepair = $_POST['ipadpro11_2genscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `screenrepair`=$ipadpro11_2genscreenrepair WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genlcdtouch !== $_POST['ipadpro11_2genlcdtouch']){
+            $ipadpro11_2genlcdtouch = $_POST['ipadpro11_2genlcdtouch'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `lcdtouch`=$ipadpro11_2genlcdtouch WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genbatteryreplacement !== $_POST['ipadpro11_2genbatteryreplacement']){
+            $ipadpro11_2genbatteryreplacement = $_POST['ipadpro11_2genbatteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `batteryreplacement`=$ipadpro11_2genbatteryreplacement WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genchargingport !== $_POST['ipadpro11_2genchargingport']){
+            $ipadpro11_2genchargingport = $_POST['ipadpro11_2genchargingport'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `chargingport`=$ipadpro11_2genchargingport WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genheadphonejack !== $_POST['ipadpro11_2genheadphonejack']){
+            $ipadpro11_2genheadphonejack = $_POST['ipadpro11_2genheadphonejack'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `headphonejack`=$ipadpro11_2genheadphonejack WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genfrontcamera !== $_POST['ipadpro11_2genfrontcamera']){
+            $ipadpro11_2genfrontcamera = $_POST['ipadpro11_2genfrontcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `frontcamera`=$ipadpro11_2genfrontcamera WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genrearcamera !== $_POST['ipadpro11_2genrearcamera']){
+            $ipadpro11_2genrearcamera = $_POST['ipadpro11_2genrearcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcamera`=$ipadpro11_2genrearcamera WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genrearcameralens !== $_POST['ipadpro11_2genrearcameralens']){
+            $ipadpro11_2genrearcameralens = $_POST['ipadpro11_2genrearcameralens'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcameralens`=$ipadpro11_2genrearcameralens WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genhomebutton !== $_POST['ipadpro11_2genhomebutton']){
+            $ipadpro11_2genhomebutton = $_POST['ipadpro11_2genhomebutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `homebutton`=$ipadpro11_2genhomebutton WHERE `model`='pro112'");
+        }
+
+        if($ipadpro11_2genpowerbutton !== $_POST['ipadpro11_2genpowerbutton']){
+            $ipadpro11_2genpowerbutton = $_POST['ipadpro11_2genpowerbutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `powerbutton`=$ipadpro11_2genpowerbutton WHERE `model`='pro112'");
+        }
+
+
+
+        //
+        // ipadpro129_4gen
+        //
+        if($ipadpro129_4genscreenrepair !== $_POST['ipadpro129_4genscreenrepair']){
+            $ipadpro129_4genscreenrepair = $_POST['ipadpro129_4genscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `screenrepair`=$ipadpro129_4genscreenrepair WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genlcdtouch !== $_POST['ipadpro129_4genlcdtouch']){
+            $ipadpro129_4genlcdtouch = $_POST['ipadpro129_4genlcdtouch'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `lcdtouch`=$ipadpro129_4genlcdtouch WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genbatteryreplacement !== $_POST['ipadpro129_4genbatteryreplacement']){
+            $ipadpro129_4genbatteryreplacement = $_POST['ipadpro129_4genbatteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `batteryreplacement`=$ipadpro129_4genbatteryreplacement WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genchargingport !== $_POST['ipadpro129_4genchargingport']){
+            $ipadpro129_4genchargingport = $_POST['ipadpro129_4genchargingport'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `chargingport`=$ipadpro129_4genchargingport WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genheadphonejack !== $_POST['ipadpro129_4genheadphonejack']){
+            $ipadpro129_4genheadphonejack = $_POST['ipadpro129_4genheadphonejack'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `headphonejack`=$ipadpro129_4genheadphonejack WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genfrontcamera !== $_POST['ipadpro129_4genfrontcamera']){
+            $ipadpro129_4genfrontcamera = $_POST['ipadpro129_4genfrontcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `frontcamera`=$ipadpro129_4genfrontcamera WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genrearcamera !== $_POST['ipadpro129_4genrearcamera']){
+            $ipadpro129_4genrearcamera = $_POST['ipadpro129_4genrearcamera'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcamera`=$ipadpro129_4genrearcamera WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genrearcameralens !== $_POST['ipadpro129_4genrearcameralens']){
+            $ipadpro129_4genrearcameralens = $_POST['ipadpro129_4genrearcameralens'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `rearcameralens`=$ipadpro129_4genrearcameralens WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genhomebutton !== $_POST['ipadpro129_4genhomebutton']){
+            $ipadpro129_4genhomebutton = $_POST['ipadpro129_4genhomebutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `homebutton`=$ipadpro129_4genhomebutton WHERE `model`='pro1294'");
+        }
+
+        if($ipadpro129_4genpowerbutton !== $_POST['ipadpro129_4genpowerbutton']){
+            $ipadpro129_4genpowerbutton = $_POST['ipadpro129_4genpowerbutton'];
+            $price = $wpdb->get_results("UPDATE `appleipad` SET `powerbutton`=$ipadpro129_4genpowerbutton WHERE `model`='pro1294'");
+        }
+    }
+
+    if(isset($_POST['iwatch-save'])) { 
+
+        // iwatch series4_40m
+        if($series4_40mscreenrepair !== $_POST['series4_40mscreenrepair']){
+            $series4_40mscreenrepair = $_POST['series4_40mscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series4_40mscreenrepair WHERE `model`='series4_40m'");
+        }
+
+        if($series4_40mscreenrepair !== $_POST['series4_40mscreenrepair']){
+            $series4_40mscreenrepair = $_POST['series4_40mscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series4_40mscreenrepair WHERE `model`='series4_40m'");
+        }
+
+        // iwatch series4_44m
+        if($series4_44mscreenrepair !== $_POST['series4_44mscreenrepair']){
+            $series4_44mscreenrepair = $_POST['series4_44mscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series4_44mscreenrepair WHERE `model`='series4_44m'");
+        }
+
+        if($series4_44mbatteryreplacement !== $_POST['series4_44mbatteryreplacement']){
+            $series4_44mbatteryreplacement = $_POST['series4_44mbatteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series4_44mbatteryreplacement WHERE `model`='series4_44m'");
+        }
+
+        // iwatch series5_40m
+        if($series5_40mscreenrepair !== $_POST['series5_40mscreenrepair']){
+            $series5_40mscreenrepair = $_POST['series5_40mscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series5_40mscreenrepair WHERE `model`='series5_40m'");
+        }
+
+        if($series5_40mbatteryreplacement !== $_POST['series5_40mbatteryreplacement']){
+            $series5_40mbatteryreplacement = $_POST['series5_40mbatteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series5_40mbatteryreplacement WHERE `model`='series5_40m'");
+        }
+
+        // iwatch series5_44m
+        if($series5_44mscreenrepair !== $_POST['series5_44mscreenrepair']){
+            $series5_44mscreenrepair = $_POST['series5_44mscreenrepair'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series5_44mscreenrepair WHERE `model`='series5_44m'");
+        }
+
+        if($series5_44mbatteryreplacement !== $_POST['series5_44mbatteryreplacement']){
+            $series5_44mbatteryreplacement = $_POST['series5_44mbatteryreplacement'];
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series5_44mpowerbutton WHERE `model`='series5_44m'");
+        }
+    }
+
 ?>
