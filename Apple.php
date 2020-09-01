@@ -324,7 +324,7 @@ function appleSubMenu(){
         }
 
         function EnableDisableTextBoxiPad(switchapple) {
-            var ipadeinputs = document.getElementsByClassName("ipadinputs");
+            var ipadinputs = document.getElementsByClassName("ipadinputs");
             for(var i = 0; i < ipadinputs.length; i++) {
                 // if(iphoneinputs[i].disabled === true){
                 if(ipadinputs[i].readOnly === true){
@@ -342,12 +342,12 @@ function appleSubMenu(){
                 // }
             }
 
-            var button = document.getElementById("ipad-save");
-            if(button.style.display === "none"){
-                button.style.display = "inline-block";
+            var button1 = document.getElementById("ipad-save");
+            if(button1.style.display === "none"){
+                button1.style.display = "inline-block";
             }
             else{
-                button.style.display = "none";
+                button1.style.display = "none";
             }
         }
     </script>
