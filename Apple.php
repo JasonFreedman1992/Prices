@@ -524,7 +524,7 @@ function appleSubMenu(){
         <!-- iPad 1 -->
         <!-- iPad 2 -->
         <!-- iPad 3 -->
-        <form method="post"> 
+        <form onsubmit="return false" method="post"> 
         <div class="submenu-heading">
             <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
             <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
