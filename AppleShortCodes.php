@@ -1,5 +1,7 @@
 <?php 
 
+// apple iphone 
+
 function iphone11screenrepair(){
     global $wpdb;
     $finalString = "$";
@@ -87,5 +89,9 @@ function iphone11homebutton(){
     $finalString .= $price[0]->homebutton;
     return $finalString;
 }
+
+// apple ipad
+
+// apple iwatch
 
 ?>
