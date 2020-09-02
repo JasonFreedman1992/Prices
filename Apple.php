@@ -298,7 +298,8 @@ function appleSubMenu(){
     <script>
 
         function onFocus(textinput){
-            console.log("focus value" + textinput.value);
+            console.log(textinput);
+            // console.log("focus value" + textinput.value);
             $lastfocusvalue = textinput.value;
         }
 
