@@ -295,6 +295,7 @@ function appleSubMenu(){
 
     <script>
         function onInputFocus(textinput){
+            console.log("input");
             var input = textinput;
             input.style.border = "2px solid red !important";
         }
