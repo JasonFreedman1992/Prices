@@ -307,7 +307,10 @@ function appleSubMenu(){
             console.log("focusout placeholde:" + textinput.placeholder);
             console.log("focusout currentval:" + textinput.value);
             if(textinput.placeholder !== textinput.value){
-                textinput.style.borderColor = "red";
+                textinput.style.borderColor = "green";
+            }
+            else{
+                textinput.style.borderColor = "#3471D1";
             }
         }
 
