@@ -234,6 +234,8 @@ function appleSubMenu(){
     //     }
     // } 
 
+    $lastfocusvalue = 0;
+
     ?>
 
     <style>
@@ -294,7 +296,12 @@ function appleSubMenu(){
     <!-- var x = document.getElementsByClassName("testClass"); -->
 
     <script>
-        function onInputFocus(textinput){
+
+        function onFocus(textinput){
+            console.log("focus value" + textinput.value);
+        }
+
+        function onFocusOut(textinput){
             console.log(textinput.style);
             var input = textinput;
             input.style.borderColor = "red";
@@ -434,7 +441,7 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input onfocusout="onInputFocus(this)" maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocusout="onFocusOut(this)" maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11screenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11screenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11proscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11promaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" /></td>
