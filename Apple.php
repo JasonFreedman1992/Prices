@@ -297,7 +297,7 @@ function appleSubMenu(){
         function onInputFocus(textinput){
             console.log(textinput.style);
             var input = textinput;
-            input.style.border = "2px solid red !important";
+            input.style.borderColor = "red";
         }
 
         function EnableDisableTextBoxiPhone(switchapple) {
