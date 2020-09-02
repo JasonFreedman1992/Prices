@@ -299,12 +299,15 @@ function appleSubMenu(){
 
         function onFocus(textinput){
             console.log("focus value" + textinput.value);
+            $lastfocusvalue = textinput.value;
         }
 
         function onFocusOut(textinput){
             console.log(textinput.style);
             var input = textinput;
-            input.style.borderColor = "red";
+            if(textinput.value !== $lastfocusvalue){
+                input.style.borderColor = "red";
+            }
         }
 
         function EnableDisableTextBoxiPhone(switchapple) {
