@@ -175,65 +175,6 @@ function appleSubMenu(){
     //
     include_once(__DIR__.'/AppleInputFunctions.php');
 
-    // screenrepair
-    // lcdtouch
-    // batteryreplacement
-    // chargingport
-    // headphonejack
-    // front camera
-    // rear camera
-    // rear back glass
-    // rear camera lens
-    // power button
-    // home button
-
-    // <th>iPhone X</th>
-    // <th>iPhone 11</th>
-    // <th>iPhone 11 Pro</th>
-    // <th>iPhone 11 ProMax</th>
-    // <th>iPhone XS</th>
-    // <th>iPhone XS Max</th>
-
-    // document.getElementsByClassName('iphoneinputs').onchange = function() {
-    //     document.getElementById('yourText').disabled = !this.checked;
-    // };
-    // iphoneinputs.forEach(disable)
-    // for(var i = 0; i < buttons.length; i++) {
-    //     if(buttons[i].style.display === "none"){
-    //         buttons[i].style.display = "inline-block";
-    //     }
-    //     else{
-    //         buttons[i].style.display = "none";
-    //     }
-        
-    //     // iphoneinputs[i] = (e) => {
-    //     //     e.currentTarget.style.display = "none"
-    //     // }
-    // }
-    // var iphoneinputs = document.getElementsByClassName("iphoneinputs");
-    // // console.log(iphoneinputs);
-    // iphoneinputs.disabled = switchapple.checked ? false : true;
-    // console.log("clicking da box");
-    // console.log(iphoneinputs.length);
-
-    // $price = $wpdb->get_results("SELECT * FROM `appleiphone` WHERE `model`='11'");
-    // $sql = $wpdb->prepare("UPDATE appleiphone SET screenrepair='200' WHERE model='11' ") ;
-    // $wpdb->query($sql);
-    // $sql = $wpdb->prepare("UPDATE `appleiphone` SET `screenrepair`='200' WHERE `model`='11'") ;
-    // $wpdb->query($sql);
-    // if(isset($_POST['iphone11screenrepair'])){
-    //     $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
-    // }
-    // // $iphone11screenrepairprice = $_POST['iphone11screenrepair'];
-    // // global $wpdb;
-    // if(isset($_POST['iphone-save'])) { 
-
-    //     if($iphone11screenrepair !== $_POST['iphone11screenrepair']){
-    //         $iphone11screenrepair = $_POST['iphone11screenrepair'];
-    //         $price = $wpdb->get_results("UPDATE `appleiphone` SET `screenrepair`=$iphone11screenrepairprice WHERE `model`='11'");
-    //     }
-    // } 
-
     $lastfocusvalue = 0;
 
     ?>
@@ -242,7 +183,6 @@ function appleSubMenu(){
 
         input#switch{
             display: inline-block;
-            
         }
 
         input#switchapple{
@@ -251,7 +191,6 @@ function appleSubMenu(){
         }
 
         .submenu-wrapper{
-            /* padding-top: 20px; */
             display: block;
         }
 
@@ -293,19 +232,14 @@ function appleSubMenu(){
         }
     </style>
 
-    <!-- var x = document.getElementsByClassName("testClass"); -->
-
     <script>
 
         function onFocus(textinput){
             console.log(textinput);
             console.log("focus value" + textinput.placeholder);
-            $lastfocusvalue = textinput.value;
         }
 
         function onFocusOut(textinput){
-            console.log("focusout placeholde:" + textinput.placeholder);
-            console.log("focusout currentval:" + textinput.value);
             if(textinput.placeholder !== textinput.value){
                 textinput.style.borderColor = "red";
             }
@@ -317,20 +251,13 @@ function appleSubMenu(){
         function EnableDisableTextBoxiPhone(switchapple) {
             var iphoneinputs = document.getElementsByClassName("iphoneinputs");
             for(var i = 0; i < iphoneinputs.length; i++) {
-                // if(iphoneinputs[i].disabled === true){
                 if(iphoneinputs[i].readOnly === true){
-                    // iphoneinputs[i].disabled = false;
                     iphoneinputs[i].readOnly = false;
 
                 }
                 else{
-                    // iphoneinputs[i].disabled = true;
                     iphoneinputs[i].readOnly = true;
                 }
-                
-                // iphoneinputs[i] = (e) => {
-                //     e.currentTarget.style.display = "none"
-                // }
             }
 
             var button = document.getElementById("iphone-save");
@@ -345,20 +272,12 @@ function appleSubMenu(){
         function EnableDisableTextBoxiPad(switchapple) {
             var ipadinputs = document.getElementsByClassName("ipadinputs");
             for(var i = 0; i < ipadinputs.length; i++) {
-                // if(iphoneinputs[i].disabled === true){
                 if(ipadinputs[i].readOnly === true){
-                    // iphoneinputs[i].disabled = false;
                     ipadinputs[i].readOnly = false;
-
                 }
                 else{
-                    // iphoneinputs[i].disabled = true;
                     ipadinputs[i].readOnly = true;
                 }
-                
-                // iphoneinputs[i] = (e) => {
-                //     e.currentTarget.style.display = "none"
-                // }
             }
 
             var button1 = document.getElementById("ipad-save");
@@ -373,20 +292,12 @@ function appleSubMenu(){
         function EnableDisableTextBoxiWatch(switchapple) {
             var iwatchinputs = document.getElementsByClassName("iwatchinputs");
             for(var i = 0; i < iwatchinputs.length; i++) {
-                // if(iphoneinputs[i].disabled === true){
                 if(iwatchinputs[i].readOnly === true){
-                    // iphoneinputs[i].disabled = false;
                     iwatchinputs[i].readOnly = false;
-
                 }
                 else{
-                    // iphoneinputs[i].disabled = true;
                     iwatchinputs[i].readOnly = true;
                 }
-                
-                // iphoneinputs[i] = (e) => {
-                //     e.currentTarget.style.display = "none"
-                // }
             }
 
             var button2 = document.getElementById("iwatch-save");
@@ -409,27 +320,12 @@ function appleSubMenu(){
 
         <div class="submenu-wrapper2">
         <form method="post"> 
-        <!-- <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <div class="submenu-heading">
-            <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
-            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
             <h1 class="submenu-heading1">
                 iPhone
             </h1>
-
-
-                <?php
-
-                    //
-                    // file imports for Apple Input Functions
-                    //
-                    // include_once(__DIR__.'/AppleInputFunctions.php');
-
-                ?> 
         </div>
         <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/>
-        <!-- <form method="post"> 
-        <input type="submit" name="iphone-save" id="iphone-save" style="padding:10px; margin-bottom: 7.4px; margin-left: 20px; " class="pure-button pure-button-primary"/> -->
         <table class="pure-table pure-table-bordered submenu-table">
             <thead>
                 <tr>
@@ -457,84 +353,84 @@ function appleSubMenu(){
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11lcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prolcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prolcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexslcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexslcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXlcdtouch ?>" value="<?php echo $iphoneXlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11lcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11lcdtouch ?>" value="<?php echo $iphone11lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prolcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11prolcdtouch ?>" value="<?php echo $iphone11prolcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxlcdtouch ?>" value="<?php echo $iphone11promaxlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexslcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexslcdtouch ?>" value="<?php echo $iphonexslcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxlcdtouch" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxlcdtouch ?>" value="<?php echo $iphonexsmaxlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11batteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11probatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11probatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXbatteryreplacement ?>" value="<?php echo $iphoneXbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11batteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11batteryreplacement ?>" value="<?php echo $iphone11batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11probatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11probatteryreplacement ?>" value="<?php echo $iphone11probatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxbatteryreplacement ?>" value="<?php echo $iphone11promaxbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsbatteryreplacement ?>" value="<?php echo $iphonexsbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxbatteryreplacement" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxbatteryreplacement ?>" value="<?php echo $iphonexsmaxbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXchargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11chargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prochargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prochargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxchargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexschargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexschargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxchargingport" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXchargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXchargingport ?>" value="<?php echo $iphoneXchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11chargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11chargingport ?>" readonly value="<?php echo $iphone11chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prochargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11prochargingport ?>" readonly value="<?php echo $iphone11prochargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxchargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxchargingport ?>" value="<?php echo $iphone11promaxchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexschargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexschargingport ?>" value="<?php echo $iphonexschargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxchargingport" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxchargingport ?>" value="<?php echo $iphonexsmaxchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11headphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11proheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXheadphonejack ?>" value="<?php echo $iphoneXheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11headphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11headphonejack ?>" value="<?php echo $iphone11headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11proheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11proheadphonejack ?>" value="<?php echo $iphone11proheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxheadphonejack ?>" value="<?php echo $iphone11promaxheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsheadphonejack ?>" value="<?php echo $iphonexsheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxheadphonejack" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxheadphonejack ?>" value="<?php echo $iphonexsmaxheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11frontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11profrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11profrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXfrontcamera ?>" value="<?php echo $iphoneXfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11frontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11frontcamera ?>" value="<?php echo $iphone11frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11profrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11profrontcamera ?>" value="<?php echo $iphone11profrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxfrontcamera ?>" value="<?php echo $iphone11promaxfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsfrontcamera ?>" value="<?php echo $iphonexsfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxfrontcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxfrontcamera ?>" value="<?php echo $iphonexsmaxfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11rearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prorearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXrearcamera ?>" value="<?php echo $iphoneXrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11rearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11rearcamera ?>" value="<?php echo $iphone11rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prorearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11prorearcamera ?>" value="<?php echo $iphone11prorearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxrearcamera ?>" value="<?php echo $iphone11promaxrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsrearcamera ?>" value="<?php echo $iphonexsrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxrearcamera" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxrearcamera ?>" value="<?php echo $iphonexsmaxrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11rearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prorearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prorearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXrearcameralens ?>" value="<?php echo $iphoneXrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11rearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11rearcameralens ?>" value="<?php echo $iphone11rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prorearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11prorearcameralens ?>" value="<?php echo $iphone11prorearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxrearcameralens ?>" value="<?php echo $iphone11promaxrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsrearcameralens ?>" value="<?php echo $iphonexsrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxrearcameralens" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxrearcameralens ?>" value="<?php echo $iphonexsmaxrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11homebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prohomebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11prohomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexshomebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexshomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXhomebutton ?>" value="<?php echo $iphoneXhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11homebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11homebutton ?>" value="<?php echo $iphone11homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11prohomebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11prohomebutton ?>" value="<?php echo $iphone11prohomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxhomebutton ?>" value="<?php echo $iphone11promaxhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexshomebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexshomebutton ?>" value="<?php echo $iphonexshomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxhomebutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxhomebutton ?>" value="<?php echo $iphonexsmaxhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11powerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11propowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11propowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexspowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexspowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphoneXpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphoneXpowerbutton ?>" value="<?php echo $iphoneXpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11powerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11powerbutton ?>" value="<?php echo $iphone11powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11propowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11propowerbutton ?>" value="<?php echo $iphone11propowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphone11promaxpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphone11promaxpowerbutton ?>" value="<?php echo $iphone11promaxpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexspowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexspowerbutton ?>" value="<?php echo $iphonexspowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="iphonexsmaxpowerbutton" class="submenu-table-input iphoneinputs" type="text" readonly placeholder="<?php echo $iphonexsmaxpowerbutton ?>" value="<?php echo $iphonexsmaxpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -545,8 +441,6 @@ function appleSubMenu(){
         <!-- iPad 3 -->
         <form method="post"> 
         <div class="submenu-heading">
-            <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
-            <input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
             <h1 class="submenu-heading1">
                 iPad
             </h1>
@@ -568,73 +462,73 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97screenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105screenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105screenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97screenrepair" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97screenrepair ?>" value="<?php echo $ipadpro97screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105screenrepair" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105screenrepair ?>" value="<?php echo $ipadpro105screenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genscreenrepair ?>" value="<?php echo $ipadpro11_2genscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genscreenrepair" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genscreenrepair ?>" value="<?php echo $ipadpro129_4genscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace LCD/Touch</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105lcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97lcdtouch ?>" value="<?php echo $ipadpro97lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105lcdtouch" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105lcdtouch ?>" value="<?php echo $ipadpro105lcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genlcdtouch ?>" value="<?php echo $ipadpro11_2genlcdtouch ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genlcdtouch" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genlcdtouch ?>" value="<?php echo $ipadpro129_4genlcdtouch ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97batteryreplacement ?>" value="<?php echo $ipadpro97batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105batteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105batteryreplacement ?>" value="<?php echo $ipadpro105batteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genbatteryreplacement ?>" value="<?php echo $ipadpro11_2genbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genbatteryreplacement" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genbatteryreplacement ?>" value="<?php echo $ipadpro129_4genbatteryreplacement ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Charging Port</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97chargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105chargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105chargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genchargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genchargingport" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97chargingport" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97chargingport ?>" value="<?php echo $ipadpro97chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105chargingport" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105chargingport ?>" value="<?php echo $ipadpro105chargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genchargingport" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genchargingport ?>" value="<?php echo $ipadpro11_2genchargingport ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genchargingport" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genchargingport ?>" value="<?php echo $ipadpro129_4genchargingport ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Headphone Jack</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97headphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105headphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105headphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97headphonejack" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97headphonejack ?>" value="<?php echo $ipadpro97headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105headphonejack" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105headphonejack ?>" value="<?php echo $ipadpro105headphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genheadphonejack ?>" value="<?php echo $ipadpro11_2genheadphonejack ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genheadphonejack" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genheadphonejack ?>" value="<?php echo $ipadpro129_4genheadphonejack ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Front Camera</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97frontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105frontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105frontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97frontcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97frontcamera ?>" value="<?php echo $ipadpro97frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105frontcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105frontcamera ?>" value="<?php echo $ipadpro105frontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genfrontcamera ?>" value="<?php echo $ipadpro11_2genfrontcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genfrontcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genfrontcamera ?>" value="<?php echo $ipadpro129_4genfrontcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97rearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105rearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105rearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97rearcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97rearcamera ?>" value="<?php echo $ipadpro97rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105rearcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105rearcamera ?>" value="<?php echo $ipadpro105rearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genrearcamera ?>" value="<?php echo $ipadpro11_2genrearcamera ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genrearcamera" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genrearcamera ?>" value="<?php echo $ipadpro129_4genrearcamera ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Rear Camera Lens</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105rearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97rearcameralens ?>" value="<?php echo $ipadpro97rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105rearcameralens" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105rearcameralens ?>" value="<?php echo $ipadpro105rearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genrearcameralens ?>" value="<?php echo $ipadpro11_2genrearcameralens ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genrearcameralens" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genrearcameralens ?>" value="<?php echo $ipadpro129_4genrearcameralens ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Home Button</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97homebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105homebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105homebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro97homebutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97homebutton ?>" value="<?php echo $ipadpro97homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro105homebutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105homebutton ?>" value="<?php echo $ipadpro105homebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro11_2genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genhomebutton ?>" value="<?php echo $ipadpro11_2genhomebutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)"  maxlength= "4" name="ipadpro129_4genhomebutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genhomebutton ?>" value="<?php echo $ipadpro129_4genhomebutton ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Power Button</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro97powerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro97powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro105powerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro105powerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro11_2genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro129_4genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro97powerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro97powerbutton ?>" value="<?php echo $ipadpro97powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro105powerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105powerbutton ?>" value="<?php echo $ipadpro105powerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro11_2genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genpowerbutton ?>" value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro129_4genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genpowerbutton ?>" value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
                 </tr>
             </tbody>
         </table>
@@ -646,8 +540,6 @@ function appleSubMenu(){
 
         <form method="post"> 
         <div class="submenu-heading">
-            <!-- <label style="margin-bottom: 11.4px;display: inline-block;">Unlock</label>
-            <input style="margin-bottom: 7.4px;"  id="switch" type="checkbox"/> -->
             <h1 class="submenu-heading1">
                 iWatch
             </h1>
@@ -669,17 +561,17 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_40mscreenrepair ?>" value="<?php echo $series4_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_44mscreenrepair ?>" value="<?php echo $series4_44mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_40mscreenrepair ?>" value="<?php echo $series5_40mscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_44mscreenrepair ?>" value="<?php echo $series5_44mscreenrepair ?>" /></td>
                 </tr>
                 <tr>
                     <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_40mbatteryreplacement ?>" value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_44mbatteryreplacement ?>" value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_40mbatteryreplacement ?>" value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
+                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_44mbatteryreplacement ?>" value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>
