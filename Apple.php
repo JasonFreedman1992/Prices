@@ -306,7 +306,7 @@ function appleSubMenu(){
         function onFocusOut(textinput){
             console.log("focusout lastval:" + $lastfocusvalue);
             console.log("focusout currentval:" + textinput.value);
-            if(textinput.placeholder !== $lastfocusvalue){
+            if(textinput.placeholder !== textinput.value){
                 textinput.style.borderColor = "red";
             }
         }
