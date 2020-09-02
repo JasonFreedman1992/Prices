@@ -303,10 +303,10 @@ function appleSubMenu(){
         }
 
         function onFocusOut(textinput){
-            console.log(textinput.style);
-            var input = textinput;
+            console.log("focusout lastval:" + $lastfocusvalue);
+            console.log("focusout currentval:" + textinput.value);
             if(textinput.value !== $lastfocusvalue){
-                input.style.borderColor = "red";
+                textinput.style.borderColor = "red";
             }
         }
 
