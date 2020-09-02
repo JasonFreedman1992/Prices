@@ -299,7 +299,7 @@ function appleSubMenu(){
 
         function onFocus(textinput){
             console.log(textinput);
-            // console.log("focus value" + textinput.value);
+            console.log("focus value" + textinput.placeholder);
             $lastfocusvalue = textinput.value;
         }
 
