@@ -434,7 +434,7 @@ function appleSubMenu(){
             <tbody>
                 <tr>
                     <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input onfocus="onInputFocus(this)" maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" /></td>
+                    <td class="submenu-price-field"><input onfocusout="onInputFocus(this)" maxlength="4" name="iphoneXscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphoneXscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11screenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11screenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11proscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11proscreenrepair ?>" /></td>
                     <td class="submenu-price-field"><input maxlength="4" name="iphone11promaxscreenrepair" class="submenu-table-input iphoneinputs" type="text" readonly value="<?php echo $iphone11promaxscreenrepair ?>" /></td>
