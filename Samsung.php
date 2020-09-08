@@ -153,27 +153,10 @@ function samsungSubMenu(){
     $ipadpro129_4genpowerbutton = $price9[0]->powerbutton;
     $ipadpro129_4genhomebutton = $price9[0]->homebutton;
 
-    //iwatch variables
-    $price10 = $wpdb->get_results("SELECT * FROM `appleiwatch` WHERE `model`='series5_44m'");
-    $series5_44mbatteryreplacement = $price10[0]->batteryreplacement;
-    $series5_44mscreenrepair = $price10[0]->screenrepair;
-
-    $price11 = $wpdb->get_results("SELECT * FROM `appleiwatch` WHERE `model`='series5_40m'");
-    $series5_40mbatteryreplacement = $price11[0]->batteryreplacement;
-    $series5_40mscreenrepair = $price11[0]->screenrepair;
-
-    $price12 = $wpdb->get_results("SELECT * FROM `appleiwatch` WHERE `model`='series4_44m'");
-    $series4_44mbatteryreplacement = $price12[0]->batteryreplacement;
-    $series4_44mscreenrepair = $price12[0]->screenrepair;
-
-    $price13 = $wpdb->get_results("SELECT * FROM `appleiwatch` WHERE `model`='series4_40m'");
-    $series4_40mbatteryreplacement = $price13[0]->batteryreplacement;
-    $series4_40mscreenrepair = $price13[0]->screenrepair;
-
     //
-    // apple helper functions
+    // Samsung helper functions
     //
-    include_once(__DIR__.'/AppleInputFunctions.php');
+    include_once(__DIR__.'/SamsungInputFunctions.php');
 
     $lastfocusvalue = 0;
 
@@ -529,49 +512,6 @@ function samsungSubMenu(){
                     <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro105powerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro105powerbutton ?>" value="<?php echo $ipadpro105powerbutton ?>" /></td>
                     <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro11_2genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro11_2genpowerbutton ?>" value="<?php echo $ipadpro11_2genpowerbutton ?>" /></td>
                     <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="ipadpro129_4genpowerbutton" class="submenu-table-input ipadinputs" type="text" readonly placeholder="<?php echo $ipadpro129_4genpowerbutton ?>" value="<?php echo $ipadpro129_4genpowerbutton ?>" /></td>
-                </tr>
-            </tbody>
-        </table>
-        </form>
-
-        <!-- iWatch 1 -->
-        <!-- iWatch 2 -->
-        <!-- iWatch 3 -->
-
-        <form method="post"> 
-        <div class="submenu-heading">
-            <h1 class="submenu-heading1">
-                iWatch
-            </h1>
-            <button id="iwatch-save" name="iwatch-save" type="submit" style="margin-bottom: 7.4px;margin-left: 20px; " class="pure-button pure-button-primary">Save</button>
-        </div>
-        <table class="pure-table pure-table-bordered submenu-table">
-            <thead>
-                <tr>
-                    <th>            
-                        <label style="padding-bottom: 4px;display: inline-block;">Locked</label>
-                        <input onclick="EnableDisableTextBoxiWatch(this)" id="iwatchswitch"  checked type="checkbox"/>
-                    </th>
-                    <th>Series 4 40mm</th>
-                    <th>Series 4 44mm</th>
-                    <th>Series 5 40mm</th>
-                    <th>Series 5 44mm</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Repair/Replace Glass</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_40mscreenrepair ?>" value="<?php echo $series4_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_44mscreenrepair ?>" value="<?php echo $series4_44mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_40mscreenrepair ?>" value="<?php echo $series5_40mscreenrepair ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mscreenrepair" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_44mscreenrepair ?>" value="<?php echo $series5_44mscreenrepair ?>" /></td>
-                </tr>
-                <tr>
-                    <td>Repair/Replace Battery</td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_40mbatteryreplacement ?>" value="<?php echo $series4_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series4_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series4_44mbatteryreplacement ?>" value="<?php echo $series4_44mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_40mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_40mbatteryreplacement ?>" value="<?php echo $series5_40mbatteryreplacement ?>" /></td>
-                    <td class="submenu-price-field"><input onfocus="onFocus(this)" onfocusout="onFocusOut(this)" maxlength= "4" name="series5_44mbatteryreplacement" class="submenu-table-input iwatchinputs" type="text" readonly placeholder="<?php echo $series5_44mbatteryreplacement ?>" value="<?php echo $series5_44mbatteryreplacement ?>" /></td>
                 </tr>
             </tbody>
         </table>
