@@ -74,6 +74,69 @@ add_shortcode('iphonexsmaxpowerbutton', 'iphonexsmaxpowerbutton');
 add_shortcode('iphonexsmaxhomebutton', 'iphonexsmaxhomebutton');
 
 
+//ipad shortcodes
+add_shortcode('ipadpro97screenrepair', 'ipadpro97screenrepair');
+add_shortcode('ipadpro97batteryreplacement', 'ipadpro97batteryreplacement');
+add_shortcode('ipadpro97lcdtouch', 'ipadpro97lcdtouch');
+add_shortcode('ipadpro97chargingport', 'ipadpro97chargingport');
+add_shortcode('ipadpro97headphonejack', 'ipadpro97headphonejack');
+add_shortcode('ipadpro97frontcamera', 'ipadpro97frontcamera');
+add_shortcode('ipadpro97rearcamera', 'ipadpro97rearcamera');
+add_shortcode('ipadpro97rearcameralens', 'ipadpro97rearcameralens');
+add_shortcode('ipadpro97rearbackglass', 'ipadpro97rearbackglass');
+add_shortcode('ipadpro97powerbutton', 'ipadpro97powerbutton');
+add_shortcode('ipadpro97homebutton', 'ipadpro97homebutton');
+
+add_shortcode('ipadpro105screenrepair', 'ipadpro105screenrepair');
+add_shortcode('ipadpro105batteryreplacement', 'ipadpro105batteryreplacement');
+add_shortcode('ipadpro105lcdtouch', 'ipadpro105lcdtouch');
+add_shortcode('ipadpro105chargingport', 'ipadpro105chargingport');
+add_shortcode('ipadpro105headphonejack', 'ipadpro105headphonejack');
+add_shortcode('ipadpro105frontcamera', 'ipadpro105frontcamera');
+add_shortcode('ipadpro105rearcamera', 'ipadpro105rearcamera');
+add_shortcode('ipadpro105rearcameralens', 'ipadpro105rearcameralens');
+add_shortcode('ipadpro105rearbackglass', 'ipadpro105rearbackglass');
+add_shortcode('ipadpro105powerbutton', 'ipadpro105powerbutton');
+add_shortcode('ipadpro105homebutton', 'ipadpro105homebutton');
+
+add_shortcode('ipadpro112screenrepair', 'ipadpro112screenrepair');
+add_shortcode('ipadpro112batteryreplacement', 'ipadpro112batteryreplacement');
+add_shortcode('ipadpro112lcdtouch', 'ipadpro112lcdtouch');
+add_shortcode('ipadpro112chargingport', 'ipadpro112chargingport');
+add_shortcode('ipadpro112headphonejack', 'ipadpro112headphonejack');
+add_shortcode('ipadpro112frontcamera', 'ipadpro112frontcamera');
+add_shortcode('ipadpro112rearcamera', 'ipadpro112rearcamera');
+add_shortcode('ipadpro112rearcameralens', 'ipadpro112rearcameralens');
+add_shortcode('ipadpro112rearbackglass', 'ipadpro112rearbackglass');
+add_shortcode('ipadpro112powerbutton', 'ipadpro112powerbutton');
+add_shortcode('ipadpro112homebutton', 'ipadpro112homebutton');
+
+add_shortcode('ipadpro1294screenrepair', 'ipadpro1294screenrepair');
+add_shortcode('ipadpro1294batteryreplacement', 'ipadpro1294batteryreplacement');
+add_shortcode('ipadpro1294lcdtouch', 'ipadpro1294lcdtouch');
+add_shortcode('ipadpro1294chargingport', 'ipadpro1294chargingport');
+add_shortcode('ipadpro1294headphonejack', 'ipadpro1294headphonejack');
+add_shortcode('ipadpro1294frontcamera', 'ipadpro1294frontcamera');
+add_shortcode('ipadpro1294rearcamera', 'ipadpro1294rearcamera');
+add_shortcode('ipadpro1294rearcameralens', 'ipadpro1294rearcameralens');
+add_shortcode('ipadpro1294rearbackglass', 'ipadpro1294rearbackglass');
+add_shortcode('ipadpro1294powerbutton', 'ipadpro1294powerbutton');
+add_shortcode('ipadpro1294homebutton', 'ipadpro1294homebutton');
+
+// iwatch shortcodes ('string for shortcode', 'function being called by this shortcode')
+add_shortcode('series4_40mscreenrepair', 'series4_40mscreenrepair');
+add_shortcode('series4_40mbatteryreplacement', 'series4_40mbatteryreplacement');
+
+add_shortcode('series4_44mscreenrepair', 'series4_44mscreenrepair');
+add_shortcode('series4_44mbatteryreplacement', 'series4_44mbatteryreplacement');
+
+add_shortcode('series5_40mscreenrepair', 'series5_40mscreenrepair');
+add_shortcode('series5_40mbatteryreplacement', 'series5_40mbatteryreplacement');
+
+add_shortcode('series5_44mscreenrepair', 'series5_44mscreenrepair');
+add_shortcode('series5_44mbatteryreplacement', 'series5_44mbatteryreplacement');
+
+
 // apple iphone 
 
 function iphone11screenrepair(){
