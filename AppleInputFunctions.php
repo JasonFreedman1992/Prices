@@ -569,7 +569,7 @@
 
         if($series4_40mbatteryreplacement !== $_POST['series4_40mbatteryreplacement']){
             $series4_40mbatteryreplacement = $_POST['series4_40mbatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `screenrepair`=$series4_40mbatteryreplacement WHERE `model`='series4_40m'");
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series4_40mbatteryreplacement WHERE `model`='series4_40m'");
         }
 
         // iwatch series4_44m
