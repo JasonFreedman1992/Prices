@@ -602,7 +602,7 @@
 
         if($series5_44mbatteryreplacement !== $_POST['series5_44mbatteryreplacement']){
             $series5_44mbatteryreplacement = $_POST['series5_44mbatteryreplacement'];
-            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series5_44mpowerbutton WHERE `model`='series5_44m'");
+            $price = $wpdb->get_results("UPDATE `appleiwatch` SET `batteryreplacement`=$series5_44mbatteryreplacement WHERE `model`='series5_44m'");
         }
     }
 
